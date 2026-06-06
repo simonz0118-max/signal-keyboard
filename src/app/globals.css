@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0A0A0E;
+  --bg-surface: #111118;
+  --border-default: #1A1A24;
+  --accent: #00FF41;
+  --accent-glow: rgba(0, 255, 65, 0.15);
+  --text-primary: #F5F5F7;
+  --text-secondary: #888896;
+  --text-muted: #555562;
+  --nav-bg: rgba(10, 10, 14, 0.85);
+  --nav-border: rgba(26, 26, 36, 0.8);
+}
+
+[data-theme="light"] {
+  --bg-primary: #F8F8FA;
+  --bg-surface: #FFFFFF;
+  --border-default: #E4E4EA;
+  --accent: #00B538;
+  --accent-glow: rgba(0, 181, 56, 0.12);
+  --text-primary: #0A0A0E;
+  --text-secondary: #5A5A6E;
+  --text-muted: #90909E;
+  --nav-bg: rgba(248, 248, 250, 0.85);
+  --nav-border: rgba(228, 228, 234, 0.8);
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-surface: var(--bg-surface);
+  --color-border-default: var(--border-default);
+  --color-accent: var(--accent);
+  --color-accent-glow: var(--accent-glow);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-nav-bg: var(--nav-bg);
+  --color-nav-border: var(--nav-border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-default) transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent-glow);
+  color: var(--text-primary);
+}
+
+.section-padding {
+  @apply px-6 md:px-12 lg:px-24 py-24 md:py-36;
+}

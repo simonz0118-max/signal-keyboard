@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "products": "Keyboards",
+    "technology": "How It Works",
+    "customize": "Build Yours",
+    "community": "Community",
+    "joinWaitlist": "Get Early Access"
+  },
+  "hero": {
+    "tagline": "Feel every keystroke.",
+    "subtitle": "Magnetic analog switches that read how far you press — not just whether you pressed. Zero lag. Fully customisable. This is what a keyboard should have always been.",
+    "cta": "Join the waitlist",
+    "scrollHint": "See what's inside"
+  },
+  "products": {
+    "heading": "Same core. Three sizes.",
+    "subtitle": "Every model runs the same magnetic switch engine. The only question is how much desk space you want to give it.",
+    "model60": {
+      "name": "Signal 60",
+      "format": "60% — Compact",
+      "spec1": "61 keys",
+      "spec2": "280 × 105 mm",
+      "spec3": "580 g"
+    },
+    "model75": {
+      "name": "Signal 75",
+      "format": "75% — Everyday",
+      "spec1": "84 keys",
+      "spec2": "320 × 135 mm",
+      "spec3": "820 g"
+    },
+    "model100": {
+      "name": "Signal 100",
+      "format": "100% — Full-size",
+      "spec1": "108 keys",
+      "spec2": "440 × 140 mm",
+      "spec3": "1.15 kg"
+    },
+    "switchCount": "magnetic switches",
+    "learnMore": "Tech specs"
+  },
+  "tech": {
+    "heading": "Magnetic, not mechanical.",
+    "subtitle": "Traditional switches physically touch to register a press. Ours don't. A Hall-effect sensor reads the exact position of every key in real time — so you can set the actuation point wherever you want, and release is detected the instant your finger lifts.",
+    "feature1": {
+      "title": "Adjustable actuation",
+      "value": "0.1",
+      "unit": "mm",
+      "desc": "Set each key to fire anywhere between 0.1 mm and 4.0 mm. Want hair-trigger WASD and deep-press spacebar? Go ahead. Rapid Trigger means the key resets the moment you start lifting — no waiting for a fixed return point."
+    },
+    "feature2": {
+      "title": "Sub-millisecond latency",
+      "value": "0.03",
+      "unit": "ms",
+      "desc": "No debounce algorithm. No matrix scan delay. The sensor reads position continuously and the firmware pushes the signal straight to USB. From finger to frame, the path is as short as physics allows."
+    },
+    "feature3": {
+      "title": "Built to outlast you",
+      "value": "100",
+      "unit": "M",
+      "desc": "No physical contacts means nothing to wear down. Every press is contactless. We rate each switch at 100 million actuations — which is probably longer than you'll keep any single keyboard."
+    }
+  },
+  "customize": {
+    "heading": "Make it yours.",
+    "subtitle": "Switches, case, caps — everything swaps. Start with the core you want and build out from there.",
+    "switchType": "Switch feel",
+    "caseType": "Case material",
+    "keycapType": "Keycap profile",
+    "switchLinear": "Linear · 60 g",
+    "switchTactile": "Tactile · 55 g",
+    "switchClicky": "Clicky · 65 g",
+    "caseAluminum": "CNC aluminium",
+    "casePoly": "Polycarbonate",
+    "caseWood": "Bamboo",
+    "keycapCherry": "Cherry",
+    "keycapSA": "SA",
+    "keycapDSA": "DSA",
+    "specPreview": "Your build: {switch} · {case} · {keycap}"
+  },
+  "waitlist": {
+    "heading": "Get in early.",
+    "subtitle": "We're shipping in small batches. Join the list and we'll let you know when your slot opens — no spam, no nonsense.",
+    "emailPlaceholder": "you@email.com",
+    "cta": "Reserve a spot",
+    "submitting": "One moment…",
+    "success": {
+      "title": "You're on the list.",
+      "line1": "We'll email you as soon as production slots open up.",
+      "line2": "Early members get priority pricing — locked in for life.",
+      "line3": "That's it. No drip campaigns, no upsells, just launch updates.",
+      "back": "Add another email"
+    },
+    "error": "Hm, that doesn't look like an email address."
+  },
+  "footer": {
+    "brandTagline": "Analog keyboard engineering.",
+    "productsCol": "Keyboards",
+    "companyCol": "Company",
+    "communityCol": "Community",
+    "about": "About",
+    "blog": "Engineering log",
+    "contact": "Contact",
+    "discord": "Discord",
+    "twitter": "X",
+    "copyright": "© 2026 Signal Keyboard Inc."
+  }
+}

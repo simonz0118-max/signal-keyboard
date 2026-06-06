@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "products": "Claviers",
+    "technology": "La technologie",
+    "customize": "Configurez le vôtre",
+    "community": "Communauté",
+    "joinWaitlist": "Accès anticipé"
+  },
+  "hero": {
+    "tagline": "Sentez chaque frappe.",
+    "subtitle": "Des switches magnétiques analogiques qui lisent jusqu'où vous appuyez — pas juste si vous appuyez. Zéro latence. Entièrement personnalisable. Voilà ce qu'un clavier aurait toujours dû être.",
+    "cta": "Rejoindre la liste",
+    "scrollHint": "Découvrir"
+  },
+  "products": {
+    "heading": "Même moteur. Trois formats.",
+    "subtitle": "Tous les modèles partagent le même moteur à switches magnétiques. La seule question, c'est l'espace que vous voulez lui laisser sur votre bureau.",
+    "model60": {
+      "name": "Signal 60",
+      "format": "60% · Compact",
+      "spec1": "61 touches",
+      "spec2": "280 × 105 mm",
+      "spec3": "580 g"
+    },
+    "model75": {
+      "name": "Signal 75",
+      "format": "75% · Quotidien",
+      "spec1": "84 touches",
+      "spec2": "320 × 135 mm",
+      "spec3": "820 g"
+    },
+    "model100": {
+      "name": "Signal 100",
+      "format": "100% · Grand format",
+      "spec1": "108 touches",
+      "spec2": "440 × 140 mm",
+      "spec3": "1,15 kg"
+    },
+    "switchCount": "switches magnétiques",
+    "learnMore": "Fiche technique"
+  },
+  "tech": {
+    "heading": "Magnétique, pas mécanique.",
+    "subtitle": "Les switches traditionnels détectent une frappe par contact physique. Les nôtres, non. Un capteur à effet Hall lit la position exacte de chaque touche en temps réel — vous réglez le point d'actionnement où vous voulez, et le relâchement est détecté à l'instant où votre doigt se lève.",
+    "feature1": {
+      "title": "Point d'actionnement réglable",
+      "value": "0.1",
+      "unit": "mm",
+      "desc": "Réglez chaque touche pour qu'elle s'active entre 0,1 mm et 4,0 mm. Vous voulez des WASD ultra-réactives et une barre d'espace à course longue ? Allez-y. Le Rapid Trigger réinitialise la touche dès que vous commencez à lever le doigt."
+    },
+    "feature2": {
+      "title": "Latence sous la milliseconde",
+      "value": "0.03",
+      "unit": "ms",
+      "desc": "Pas d'algorithme de debounce. Pas de délai de matrice. Le capteur lit la position en continu et le firmware envoie le signal directement en USB. Du doigt à l'écran, le chemin est aussi court que la physique le permet."
+    },
+    "feature3": {
+      "title": "Conçu pour durer plus que vous",
+      "value": "100",
+      "unit": "M",
+      "desc": "Aucun contact physique ne s'use. Chaque frappe est sans contact. Nous garantissons 100 millions d'actionnements par switch — soit probablement plus longtemps que vous ne garderez un clavier."
+    }
+  },
+  "customize": {
+    "heading": "Faites-le vôtre.",
+    "subtitle": "Switches, boîtier, keycaps — tout est interchangeable. Choisissez votre base et construisez à partir de là.",
+    "switchType": "Type de switch",
+    "caseType": "Matériau du boîtier",
+    "keycapType": "Profil des keycaps",
+    "switchLinear": "Linéaire · 60 g",
+    "switchTactile": "Tactile · 55 g",
+    "switchClicky": "Clicky · 65 g",
+    "caseAluminum": "Aluminium CNC",
+    "casePoly": "Polycarbonate",
+    "caseWood": "Bambou",
+    "keycapCherry": "Cherry",
+    "keycapSA": "SA",
+    "keycapDSA": "DSA",
+    "specPreview": "Votre configuration : {switch} · {case} · {keycap}"
+  },
+  "waitlist": {
+    "heading": "Soyez parmi les premiers.",
+    "subtitle": "Nous expédions par petits lots. Inscrivez-vous et nous vous préviendrons quand votre créneau s'ouvre — pas de spam, pas de fioritures.",
+    "emailPlaceholder": "vous@email.com",
+    "cta": "Réserver une place",
+    "submitting": "Un instant…",
+    "success": {
+      "title": "C'est noté.",
+      "line1": "Nous vous enverrons un email dès que les créneaux de production s'ouvrent.",
+      "line2": "Les membres early bénéficient d'un tarif prioritaire — verrouillé à vie.",
+      "line3": "C'est tout. Pas de séquence d'emails, pas de vente additionnelle, juste les annonces de lancement.",
+      "back": "Ajouter un autre email"
+    },
+    "error": "Cette adresse email ne semble pas valide."
+  },
+  "footer": {
+    "brandTagline": "Ingénierie clavier analogique.",
+    "productsCol": "Claviers",
+    "companyCol": "Entreprise",
+    "communityCol": "Communauté",
+    "about": "À propos",
+    "blog": "Journal d'ingénierie",
+    "contact": "Contact",
+    "discord": "Discord",
+    "twitter": "X",
+    "copyright": "© 2026 Signal Keyboard Inc."
+  }
+}

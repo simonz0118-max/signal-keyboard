@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "products": "键盘",
+    "technology": "技术原理",
+    "customize": "定制你的",
+    "community": "社区",
+    "joinWaitlist": "抢先体验"
+  },
+  "hero": {
+    "tagline": "每一次按下，都有回响。",
+    "subtitle": "磁轴模拟开关，读取的不是通断，是行程。零延迟，全自定义。键盘早就该长这样。",
+    "cta": "加入候补名单",
+    "scrollHint": "往下看"
+  },
+  "products": {
+    "heading": "同样的内芯，三种尺寸。",
+    "subtitle": "所有型号共用一套磁轴引擎。区别只在于你想在桌面上留多少空间给它。",
+    "model60": {
+      "name": "Signal 60",
+      "format": "60% · 紧凑型",
+      "spec1": "61 键",
+      "spec2": "280 × 105 mm",
+      "spec3": "580 g"
+    },
+    "model75": {
+      "name": "Signal 75",
+      "format": "75% · 日用型",
+      "spec1": "84 键",
+      "spec2": "320 × 135 mm",
+      "spec3": "820 g"
+    },
+    "model100": {
+      "name": "Signal 100",
+      "format": "100% · 全尺寸",
+      "spec1": "108 键",
+      "spec2": "440 × 140 mm",
+      "spec3": "1.15 kg"
+    },
+    "switchCount": "颗磁轴",
+    "learnMore": "技术规格"
+  },
+  "tech": {
+    "heading": "不是机械轴，是磁轴。",
+    "subtitle": "传统轴体靠物理接触触发。我们不用。每个键下面是一颗霍尔传感器，实时读取按键的精确位置——触发点可以设在你想要的任意深度，松手瞬间就能被检测到。",
+    "feature1": {
+      "title": "可调触发点",
+      "value": "0.1",
+      "unit": "mm",
+      "desc": "每颗键可以在 0.1 mm 到 4.0 mm 之间自由设定触发深度。想把 WASD 设成轻触即发、空格键设成深按确认？随便调。Rapid Trigger 在你抬手的瞬间就复位，不用等回到固定位置。"
+    },
+    "feature2": {
+      "title": "亚毫秒级延迟",
+      "value": "0.03",
+      "unit": "ms",
+      "desc": "没有去抖算法，没有矩阵扫描延迟。传感器持续读取位置，固件直接把信号推到 USB。从手指到画面，路径短到物理极限。"
+    },
+    "feature3": {
+      "title": "寿命比你长",
+      "value": "100",
+      "unit": "M",
+      "desc": "没有物理触点，就没有磨损。每一次按压都是非接触的。每颗轴体额定 1 亿次——大概率比你手里任何一把键盘都活得久。"
+    }
+  },
+  "customize": {
+    "heading": "组装你自己的。",
+    "subtitle": "轴体、外壳、键帽——都是模块化的。选好核心，剩下的随便换。",
+    "switchType": "轴体手感",
+    "caseType": "外壳材质",
+    "keycapType": "键帽高度",
+    "switchLinear": "线性 · 60 g",
+    "switchTactile": "段落 · 55 g",
+    "switchClicky": "有声 · 65 g",
+    "caseAluminum": "CNC 铝合金",
+    "casePoly": "聚碳酸酯",
+    "caseWood": "竹木",
+    "keycapCherry": "Cherry 原厂",
+    "keycapSA": "SA 球帽",
+    "keycapDSA": "DSA 矮球帽",
+    "specPreview": "你的配置：{switch} · {case} · {keycap}"
+  },
+  "waitlist": {
+    "heading": "先人一步。",
+    "subtitle": "我们小批次发货。留下邮箱，轮到你的时候通知你——不发广告，不啰嗦。",
+    "emailPlaceholder": "你的邮箱",
+    "cta": "锁定名额",
+    "submitting": "稍等…",
+    "success": {
+      "title": "已经登记好了。",
+      "line1": "生产批次开放的第一时间，我们会邮件通知你。",
+      "line2": "早期用户享优先定价，终身锁定。",
+      "line3": "就这些。没有营销邮件，没有追加销售，只有上新通知。",
+      "back": "再登记一个"
+    },
+    "error": "这个邮箱地址好像不太对？"
+  },
+  "footer": {
+    "brandTagline": "模拟键盘工程。",
+    "productsCol": "键盘",
+    "companyCol": "公司",
+    "communityCol": "社区",
+    "about": "关于我们",
+    "blog": "工程日志",
+    "contact": "联系我们",
+    "discord": "Discord",
+    "twitter": "X",
+    "copyright": "© 2026 Signal Keyboard Inc."
+  }
+}

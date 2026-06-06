@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "products": "キーボード",
+    "technology": "しくみ",
+    "customize": "組み立てる",
+    "community": "コミュニティ",
+    "joinWaitlist": "先行予約"
+  },
+  "hero": {
+    "tagline": "打鍵のすべてを、感じる。",
+    "subtitle": "磁気アナログスイッチは、オン/オフではなく「どこまで押したか」を読む。遅延ゼロ、完全カスタマイズ。キーボードは、こうあるべきだった。",
+    "cta": "ウェイトリストに登録",
+    "scrollHint": "中を見る"
+  },
+  "products": {
+    "heading": "同じエンジン、3つのサイズ。",
+    "subtitle": "全モデルが同じ磁気スイッチエンジンを搭載。違うのは、机の上にどれだけのスペースを空けるかだけ。",
+    "model60": {
+      "name": "Signal 60",
+      "format": "60% · コンパクト",
+      "spec1": "61 キー",
+      "spec2": "280 × 105 mm",
+      "spec3": "580 g"
+    },
+    "model75": {
+      "name": "Signal 75",
+      "format": "75% · 普段使い",
+      "spec1": "84 キー",
+      "spec2": "320 × 135 mm",
+      "spec3": "820 g"
+    },
+    "model100": {
+      "name": "Signal 100",
+      "format": "100% · フルサイズ",
+      "spec1": "108 キー",
+      "spec2": "440 × 140 mm",
+      "spec3": "1.15 kg"
+    },
+    "switchCount": "磁気スイッチ",
+    "learnMore": "スペックを見る"
+  },
+  "tech": {
+    "heading": "機械式ではない。磁気式だ。",
+    "subtitle": "従来のスイッチは物理的な接触で入力を検出します。これは違う。ホール効果センサーが各キーの位置をリアルタイムで読み取り、アクチュエーションポイントを好きな深さに設定でき、指を離した瞬間にリリースを検出します。",
+    "feature1": {
+      "title": "可変アクチュエーション",
+      "value": "0.1",
+      "unit": "mm",
+      "desc": "キーごとに 0.1 mm から 4.0 mm の範囲で反応する深さを設定可能。WASD は浅く、スペースバーは深く——全部思いのまま。Rapid Trigger なら指を上げ始めた瞬間にリセット、戻りを待つ必要なし。"
+    },
+    "feature2": {
+      "title": "サブミリ秒の応答",
+      "value": "0.03",
+      "unit": "ms",
+      "desc": "デバウンス処理なし、マトリクススキャン遅延なし。センサーが常時位置を読み、ファームウェアがそのままUSBに流す。指から画面までの経路は物理的に最短。"
+    },
+    "feature3": {
+      "title": "あなたより長持ち",
+      "value": "100",
+      "unit": "M",
+      "desc": "物理接点がないから摩耗しない。毎回の打鍵は非接触。1スイッチあたり1億回の定格——どのキーボードより長く使えると思います。"
+    }
+  },
+  "customize": {
+    "heading": "自分だけの一台に。",
+    "subtitle": "スイッチ、ケース、キーキャップ——すべて交換可能。コアを選んだら、あとは自由に。",
+    "switchType": "打鍵感",
+    "caseType": "ケース素材",
+    "keycapType": "キーキャップ形状",
+    "switchLinear": "リニア · 60 g",
+    "switchTactile": "タクタイル · 55 g",
+    "switchClicky": "クリッキー · 65 g",
+    "caseAluminum": "CNCアルミ",
+    "casePoly": "ポリカーボネート",
+    "caseWood": "竹",
+    "keycapCherry": "Cherry",
+    "keycapSA": "SA",
+    "keycapDSA": "DSA",
+    "specPreview": "あなたの構成：{switch} · {case} · {keycap}"
+  },
+  "waitlist": {
+    "heading": "いち早く。",
+    "subtitle": "少量ロットでの出荷です。メールを登録していただければ、順番が来たときにお知らせします。迷惑メールは一切なし。",
+    "emailPlaceholder": "your@email.com",
+    "cta": "枠を確保",
+    "submitting": "送信中…",
+    "success": {
+      "title": "登録完了です。",
+      "line1": "生産枠が開き次第、メールでお知らせします。",
+      "line2": "早期メンバーは優先価格で、ずっと据え置き。",
+      "line3": "以上です。ステップメールもアップセルもなく、発売のお知らせだけ。",
+      "back": "別のアドレスを登録"
+    },
+    "error": "メールアドレスが正しくないようです。"
+  },
+  "footer": {
+    "brandTagline": "アナログキーボードの設計と製造。",
+    "productsCol": "キーボード",
+    "companyCol": "会社",
+    "communityCol": "コミュニティ",
+    "about": "会社概要",
+    "blog": "開発ログ",
+    "contact": "お問い合わせ",
+    "discord": "Discord",
+    "twitter": "X",
+    "copyright": "© 2026 Signal Keyboard Inc."
+  }
+}
