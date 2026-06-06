@@ -1,16 +1,16 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 import { localeLabels } from "@/i18n/routing";
 
 export default function LocaleSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
 
   function switchTo(nextLocale: string) {
-    router.replace(pathname, { locale: nextLocale });
+    // Static export: navigate by URL
+    window.location.href = "/" + nextLocale;
   }
 
   return (

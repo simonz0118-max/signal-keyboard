@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-export const runtime = "edge";
 import { Geist_Mono, Playfair_Display, Inter, Noto_Sans_JP, Noto_Sans_KR } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -31,6 +30,10 @@ export const metadata: Metadata = {
   icons: { icon: "/images/og-image.png" },
   openGraph: { title: "SIGNAL — Precision Reimagined", description: "Magnetic-switch keyboards engineered for the 0.1mm difference.", type: "website", images: [{ url: "/images/og-image.png", width: 1200, height: 630 }] },
 };
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
