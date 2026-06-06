@@ -1,0 +1,5 @@
+{
+  "name": "signal-keyboard",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-06-06"
+}
