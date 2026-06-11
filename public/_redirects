@@ -1,0 +1,11 @@
+# Cloudflare Pages redirects for clean URLs
+/en /en/ 301
+/zh /zh/ 301
+/ja /ja/ 301
+/ko /ko/ 301
+/fr /fr/ 301
+/en/products/* /en/products/:splat 200
+/zh/products/* /zh/products/:splat 200
+/ja/products/* /ja/products/:splat 200
+/ko/products/* /ko/products/:splat 200
+/fr/products/* /fr/products/:splat 200
