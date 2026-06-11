@@ -20,12 +20,12 @@ export default function ProductsSection() {
             <ProductCard
               key={product.id}
               productId={product.id}
-              name={t(`products.${product.nameKey}.name` as never)}
-              format={t(`products.${product.nameKey}.format` as never)}
+              name={t("products." + product.nameKey + ".name" as never)}
+              format={t("products." + product.nameKey + ".format" as never)}
               specs={[
-                t(`products.${product.nameKey}.spec1` as never),
-                t(`products.${product.nameKey}.spec2` as never),
-                t(`products.${product.nameKey}.spec3` as never),
+                t("products." + product.nameKey + ".spec1" as never),
+                t("products." + product.nameKey + ".spec2" as never),
+                t("products." + product.nameKey + ".spec3" as never),
               ]}
               switchCount={t("switchCount")}
               learnMore={t("learnMore")}
