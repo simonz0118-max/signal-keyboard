@@ -1,4 +1,4 @@
-import { products } from "@/lib/products";
+import { products } from "@/lib/products-data";
 import ProductDetailClient from "./client";
 
 export const dynamic = "force-static";

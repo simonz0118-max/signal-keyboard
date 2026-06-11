@@ -5,18 +5,16 @@ import SectionHeading from "./section-heading";
 import ProductCard from "./product-card";
 import { products } from "@/lib/products-data";
 
+const productKeys = {
+  s60: "products.model60",
+  s75: "products.model75",
+  s100: "products.model100",
+} as const;
+
 export default function ProductsSection() {
   const t = useTranslations("products");
 
   const delays = [0, 0.1, 0.2];
-
-  // Debug: verify products data
-  if (typeof window !== "undefined") {
-    products.forEach((p) => {
-      window.__prod_debug = window.__prod_debug || [];
-      window.__prod_debug.push({ id: p.id, nameKey: p.nameKey, resolved: "products." + p.nameKey + ".name" });
-    });
-  }
 
   return (
     <section id="products" className="section-padding">
@@ -24,24 +22,27 @@ export default function ProductsSection() {
         <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product, i) => (
-            <ProductCard
-              key={product.id}
-              productId={product.id}
-              name={t("products." + product.nameKey + ".name" as never)}
-              format={t("products." + product.nameKey + ".format" as never)}
-              specs={[
-                t("products." + product.nameKey + ".spec1" as never),
-                t("products." + product.nameKey + ".spec2" as never),
-                t("products." + product.nameKey + ".spec3" as never),
-              ]}
-              switchCount={t("switchCount")}
-              learnMore={t("learnMore")}
-              delay={delays[i]}
-              imageSrc={product.image}
-              price={product.price}
-            />
-          ))}
+          {products.map((product, i) => {
+            const prefix = productKeys[product.id as keyof typeof productKeys];
+            return (
+              <ProductCard
+                key={product.id}
+                productId={product.id}
+                name={t((prefix + ".name") as never)}
+                format={t((prefix + ".format") as never)}
+                specs={[
+                  t((prefix + ".spec1") as never),
+                  t((prefix + ".spec2") as never),
+                  t((prefix + ".spec3") as never),
+                ]}
+                switchCount={t("switchCount")}
+                learnMore={t("learnMore")}
+                delay={delays[i]}
+                imageSrc={product.image}
+                price={product.price}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
