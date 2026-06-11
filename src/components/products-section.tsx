@@ -10,6 +10,14 @@ export default function ProductsSection() {
 
   const delays = [0, 0.1, 0.2];
 
+  // Debug: verify products data
+  if (typeof window !== "undefined") {
+    products.forEach((p) => {
+      window.__prod_debug = window.__prod_debug || [];
+      window.__prod_debug.push({ id: p.id, nameKey: p.nameKey, resolved: "products." + p.nameKey + ".name" });
+    });
+  }
+
   return (
     <section id="products" className="section-padding">
       <div className="max-w-[1200px] mx-auto">
