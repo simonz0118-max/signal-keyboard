@@ -20,21 +20,24 @@
       "format": "60% · Compact",
       "spec1": "61 touches",
       "spec2": "280 × 105 mm",
-      "spec3": "580 g"
+      "spec3": "580 g",
+      "description": "Le compact qui ne sacrifie rien. 61 touches, un encombrement plus petit qu'une feuille A5, mais chaque switch est le même moteur magnétique à effet Hall que sur le grand format. Pour les petits bureaux, les grandes ambitions, et une précision qui ne tremble pas."
     },
     "model75": {
       "name": "Signal 75",
       "format": "75% · Quotidien",
       "spec1": "84 touches",
       "spec2": "320 × 135 mm",
-      "spec3": "820 g"
+      "spec3": "820 g",
+      "description": "Celui que vous utiliserez tous les jours. 84 touches — assez pour une rangée de fonctions, assez pour les flèches, pas assez pour bousculer votre deuxième écran. C'est l'équivalent clavier d'un bagage cabine bien fait : rien ne manque, rien de trop."
     },
     "model100": {
       "name": "Signal 100",
       "format": "100% · Grand format",
       "spec1": "108 touches",
       "spec2": "440 × 140 mm",
-      "spec3": "1,15 kg"
+      "spec3": "1,15 kg",
+      "description": "Toutes les touches. 108, pavé numérique inclus — pour ceux qui jurent en avoir besoin. Mêmes switches magnétiques sans latence, même plage analogique complète, simplement déployés sur une toile plus large. Pour les gens qui font du tableur le jour et du clutch round la nuit."
     },
     "switchCount": "switches magnétiques",
     "learnMore": "Fiche technique"

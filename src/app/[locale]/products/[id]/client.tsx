@@ -78,6 +78,11 @@ export default function ProductDetailClient() {
               )}
             </div>
 
+            {/* Product description */}
+            <p className="text-sm text-text-secondary leading-relaxed max-w-lg">
+              {t(`products.${product.nameKey}.description` as never)}
+            </p>
+
             <SegmentedControl
               name={t("customize.switchType")}
               options={switchOptions.map((s) => ({ value: s.id, label: t(s.nameKey as never) }))}

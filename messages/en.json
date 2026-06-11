@@ -20,21 +20,24 @@
       "format": "60% — Compact",
       "spec1": "61 keys",
       "spec2": "280 × 105 mm",
-      "spec3": "580 g"
+      "spec3": "580 g",
+      "description": "The compact one that doesn't compromise. 61 keys, a footprint smaller than a sheet of A5, but every switch is the same magnetic Hall-effect engine we put in the full-size. Built for small desks, big ambitions, and the kind of aim that doesn't flinch."
     },
     "model75": {
       "name": "Signal 75",
       "format": "75% — Everyday",
       "spec1": "84 keys",
       "spec2": "320 × 135 mm",
-      "spec3": "820 g"
+      "spec3": "820 g",
+      "description": "The one you'll actually use every day. 84 keys — enough for a function row, enough for arrows, not enough to crowd out your second monitor. It's the keyboard equivalent of a well-packed carry-on: nothing missing, nothing extra."
     },
     "model100": {
       "name": "Signal 100",
       "format": "100% — Full-size",
       "spec1": "108 keys",
       "spec2": "440 × 140 mm",
-      "spec3": "1.15 kg"
+      "spec3": "1.15 kg",
+      "description": "All the keys. 108 of them, including the numpad you swear you need. Same zero-lag magnetic switches, same full analog range, just stretched across a wider canvas. For the people who write spreadsheets by day and clutch rounds by night."
     },
     "switchCount": "magnetic switches",
     "learnMore": "Tech specs"
