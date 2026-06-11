@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useState } from "react";
-import { products, switchOptions, caseOptions, keycapOptions } from "@/lib/products";
+import { products, switchOptions, caseOptions, keycapOptions } from "@/lib/products-data";
 import { useCart } from "@/lib/cart-context";
 import SegmentedControl from "@/components/segmented-control";
 

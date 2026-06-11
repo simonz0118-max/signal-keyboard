@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useCart } from "@/lib/cart-context";
-import { products, switchOptions, caseOptions, keycapOptions } from "@/lib/products";
+import { products, switchOptions, caseOptions, keycapOptions } from "@/lib/products-data";
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 

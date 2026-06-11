@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import SectionHeading from "./section-heading";
 import ProductCard from "./product-card";
-import { products } from "@/lib/products";
+import { products } from "@/lib/products-data";
 
 export default function ProductsSection() {
   const t = useTranslations("products");
