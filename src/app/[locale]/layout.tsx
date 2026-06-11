@@ -22,6 +22,7 @@ const localeFonts: Record<string, { heading: string; body: string }> = {
   ko: { heading: "var(--font-ko)", body: "var(--font-ko)" },
 };
 
+export const dynamic = "force-static";
 export const metadata: Metadata = {
   metadataBase: new URL("https://neovora.com"),
   title: "SIGNAL — Precision Reimagined",
@@ -38,6 +39,9 @@ export function generateStaticParams() {
 export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
+  // Explicitly set request locale for static export
+  const { setRequestLocale } = await import("next-intl/server");
+  setRequestLocale(locale);
   const messages = await getMessages();
   const fonts = localeFonts[locale] ?? localeFonts.en;
   return (
