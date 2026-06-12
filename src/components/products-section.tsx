@@ -15,17 +15,17 @@ export default function ProductsSection() {
           <ProductCard
             productId="s60" name={t("model60.name" as never)} format={t("model60.format" as never)}
             specs={[t("model60.spec1" as never), t("model60.spec2" as never), t("model60.spec3" as never)]}
-            switchCount={t("switchCount")} learnMore={t("learnMore")} delay={0} imageSrc="/images/product-s60.png" price={199}
+            switchCount={t("switchCount")} learnMore={t("learnMore")} delay={0} imageSrc="/images/product-s60-real.jpg" price={219}
           />
           <ProductCard
             productId="s75" name={t("model75.name" as never)} format={t("model75.format" as never)}
             specs={[t("model75.spec1" as never), t("model75.spec2" as never), t("model75.spec3" as never)]}
-            switchCount={t("switchCount")} learnMore={t("learnMore")} delay={0.1} imageSrc="/images/product-s75.png" price={249}
+            switchCount={t("switchCount")} learnMore={t("learnMore")} delay={0.1} imageSrc="/images/product-s75-real.jpg" price={269}
           />
           <ProductCard
-            productId="s100" name={t("model100.name" as never)} format={t("model100.format" as never)}
+            productId="tkl" name={t("model100.name" as never)} format={t("model100.format" as never)}
             specs={[t("model100.spec1" as never), t("model100.spec2" as never), t("model100.spec3" as never)]}
-            switchCount={t("switchCount")} learnMore={t("learnMore")} delay={0.2} imageSrc="/images/product-s100.png" price={299}
+            switchCount={t("switchCount")} learnMore={t("learnMore")} delay={0.2} imageSrc="/images/product-s100-real.jpg" price={289}
           />
         </div>
       </div>

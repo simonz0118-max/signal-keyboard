@@ -13,23 +13,19 @@ export function useTheme() {
   return useContext(ThemeContext);
 }
 
+function getInitialTheme(): Theme {
+  if (typeof window === "undefined") return "dark";
+  const stored = localStorage.getItem("signal-theme");
+  return stored === "dark" || stored === "light" ? stored : "dark";
+}
+
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
-  const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
 
   useEffect(() => {
-    const stored = localStorage.getItem("signal-theme") as Theme | null;
-    if (stored === "dark" || stored === "light") {
-      setTheme(stored);
-    }
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("signal-theme", theme);
-  }, [theme, mounted]);
+  }, [theme]);
 
   function toggle() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));

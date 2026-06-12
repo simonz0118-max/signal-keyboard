@@ -23,10 +23,10 @@ export default function CartPage() {
     return (
       <main className="min-h-screen pt-24 section-padding">
         <div className="max-w-[500px] mx-auto text-center">
-          <h1 className="text-3xl font-bold text-text-primary mb-6">Your cart</h1>
-          <p className="text-text-muted mb-6">Your cart is empty.</p>
+          <h1 className="text-3xl font-bold text-text-primary mb-6">{t("cart.title")}</h1>
+          <p className="text-text-muted mb-6">{t("cart.empty")}</p>
           <Link href="/" className="text-sm text-accent hover:underline underline-offset-4">
-            ← Browse keyboards
+            {t("cart.browse")}
           </Link>
         </div>
       </main>
@@ -38,11 +38,11 @@ export default function CartPage() {
       <div className="max-w-[900px] mx-auto">
         <div className="flex items-center justify-between mb-10">
           <div>
-            <h1 className="text-3xl font-bold text-text-primary">Your cart</h1>
-            <p className="text-sm text-text-muted mt-1">{items.length} item{items.length !== 1 ? "s" : ""}</p>
+            <h1 className="text-3xl font-bold text-text-primary">{t("cart.title")}</h1>
+            <p className="text-sm text-text-muted mt-1">{t("cart.itemCount", { count: items.length })}</p>
           </div>
           <Link href="/" className="text-xs text-text-muted hover:text-text-secondary transition-colors">
-            ← Continue shopping
+            {t("cart.continueShopping")}
           </Link>
         </div>
 
@@ -97,7 +97,7 @@ export default function CartPage() {
                       <button
                         onClick={() => removeItem(i)}
                         className="text-xs text-text-muted hover:text-red-400 transition-colors"
-                      >Remove</button>
+                      >{t("cart.remove")}</button>
                     </div>
                   </div>
                 </div>
@@ -108,19 +108,19 @@ export default function CartPage() {
 
         <div className="mt-8 p-6 bg-bg-surface border border-border-default rounded-lg">
           <div className="flex justify-between text-sm text-text-secondary mb-2">
-            <span>Subtotal</span><span>${subtotal}</span>
+            <span>{t("cart.subtotal")}</span><span>${subtotal}</span>
           </div>
           <div className="flex justify-between text-sm text-text-secondary mb-4">
-            <span>Shipping</span><span className="text-text-muted">Calculated at checkout</span>
+            <span>{t("cart.shipping")}</span><span className="text-text-muted">{t("cart.shippingCalculated")}</span>
           </div>
           <div className="border-t border-border-default pt-4 flex justify-between text-lg font-semibold text-text-primary">
-            <span>Total</span><span>${subtotal}</span>
+            <span>{t("cart.total")}</span><span>${subtotal}</span>
           </div>
           <Link
             href="/checkout"
             className="mt-6 block w-full text-center py-3 text-sm font-semibold bg-accent text-bg-primary rounded-md hover:shadow-[0_0_24px_var(--accent-glow)] transition-all"
           >
-            Proceed to checkout
+            {t("cart.checkout")}
           </Link>
         </div>
       </div>

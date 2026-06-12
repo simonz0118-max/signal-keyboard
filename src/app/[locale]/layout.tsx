@@ -25,11 +25,16 @@ const localeFonts: Record<string, { heading: string; body: string }> = {
 export const dynamic = "force-static";
 export const metadata: Metadata = {
   metadataBase: new URL("https://neovora.com"),
-  title: "SIGNAL — Precision Reimagined",
-  description: "Magnetic-switch keyboards engineered for the 0.1mm difference. Analog input. Instant response. No compromises.",
-  keywords: ["keyboard", "magnetic switch", "analog", "hall effect", "gaming keyboard", "custom keyboard", "clavier", "magnétique"],
-  icons: { icon: "/images/og-image.png" },
-  openGraph: { title: "SIGNAL — Precision Reimagined", description: "Magnetic-switch keyboards engineered for the 0.1mm difference.", type: "website", images: [{ url: "/images/og-image.png", width: 1200, height: 630 }] },
+  title: "SIGNAL Keyboards — Small-batch custom builds",
+  description: "Small-batch mechanical keyboards assembled, tuned, and shipped with practical switch, case, and keycap options.",
+  keywords: ["keyboard", "mechanical keyboard", "custom keyboard", "keyboard studio", "keycaps", "switches"],
+  icons: { icon: "/images/og-image-real.jpg" },
+  openGraph: {
+    title: "SIGNAL Keyboards — Small-batch custom builds",
+    description: "Practical custom keyboards, tuned in small batches and built around real desk use.",
+    type: "website",
+    images: [{ url: "/images/og-image-real.jpg", width: 1200, height: 630 }],
+  },
 };
 
 export function generateStaticParams() {

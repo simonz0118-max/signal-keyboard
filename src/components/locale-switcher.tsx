@@ -8,7 +8,7 @@ export default function LocaleSwitcher() {
 
   function switchTo(nextLocale: string) {
     // Static export: navigate by URL
-    window.location.href = "/" + nextLocale + "/";
+    window.location.assign("/" + nextLocale + "/");
   }
 
   return (

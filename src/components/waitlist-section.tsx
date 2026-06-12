@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 
 export default function WaitlistSection() {
@@ -23,7 +24,7 @@ export default function WaitlistSection() {
 
   return (
     <section id="waitlist" className="section-padding bg-bg-surface/20">
-      <div className="max-w-[600px] mx-auto text-center">
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
         <AnimatePresence mode="wait">
           {state === "success" ? (
             <motion.div
@@ -31,7 +32,7 @@ export default function WaitlistSection() {
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.96 }}
-              className="flex flex-col items-center gap-6"
+              className="flex flex-col items-start text-left gap-6"
             >
               <div className="w-12 h-12 rounded-full border border-accent/30 bg-accent/10 flex items-center justify-center">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -65,13 +66,14 @@ export default function WaitlistSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+              className="text-left"
             >
               <SectionHeading
                 title={t("heading")}
                 subtitle={t("subtitle")}
               />
 
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mt-8 max-w-md mx-auto">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mt-8 max-w-md">
                 <input
                   type="email"
                   value={email}
@@ -116,6 +118,19 @@ export default function WaitlistSection() {
             </motion.div>
           )}
         </AnimatePresence>
+        <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border-default bg-bg-primary">
+          <Image
+            src="/images/product-s75-real.jpg"
+            alt={t("imageAlt")}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 55vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+          <p className="absolute bottom-4 left-4 right-4 text-xs text-white/80 leading-relaxed">
+            {t("imageCaption")}
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -32,22 +32,23 @@ export function useCart() {
   return useContext(CartContext);
 }
 
+function getInitialItems(): CartItem[] {
+  if (typeof window === "undefined") return [];
+  const saved = localStorage.getItem("signal-cart");
+  if (!saved) return [];
+  try {
+    return JSON.parse(saved) as CartItem[];
+  } catch {
+    return [];
+  }
+}
+
 export default function CartProvider({ children }: { children: ReactNode }) {
-  const [items, setItems] = useState<CartItem[]>([]);
-  const [mounted, setMounted] = useState(false);
+  const [items, setItems] = useState<CartItem[]>(getInitialItems);
 
   useEffect(() => {
-    const saved = localStorage.getItem("signal-cart");
-    if (saved) {
-      try { setItems(JSON.parse(saved)); } catch {}
-    }
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
     localStorage.setItem("signal-cart", JSON.stringify(items));
-  }, [items, mounted]);
+  }, [items]);
 
   function addItem(item: Omit<CartItem, "quantity">) {
     setItems((prev) => {

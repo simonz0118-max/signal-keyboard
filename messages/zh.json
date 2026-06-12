@@ -1,111 +1,164 @@
 {
   "nav": {
-    "products": "键盘",
-    "technology": "技术原理",
-    "customize": "定制你的",
-    "community": "社区",
-    "joinWaitlist": "抢先体验"
+    "products": "作品",
+    "technology": "调校",
+    "customize": "选项",
+    "waitlist": "批次说明",
+    "joinWaitlist": "预约一把"
   },
   "hero": {
-    "tagline": "每一次按下，都有回响。",
-    "subtitle": "磁轴模拟开关，读取的不是通断，是行程。零延迟，全自定义。键盘早就该长这样。",
-    "cta": "加入候补名单",
-    "scrollHint": "往下看"
+    "eyebrow": "小批量键盘，出货前完成调校",
+    "tagline": "第一天上桌，就应该是完成品。",
+    "subtitle": "SIGNAL 为真正每天使用键盘的人做小批量机械键盘：写字、剪辑、工作、游戏，都会在意手感和声音。每个批次限量装配，人工检查，不靠玄学参数包装。",
+    "cta": "查看本批次",
+    "secondaryCta": "了解调校流程",
+    "proof1": "真实键盘摄影，不使用产品渲染图。",
+    "proof2": "轴体、卫星轴和外壳装配出货前逐项检查。",
+    "proof3": "付款前提供清楚的配置说明。",
+    "scrollHint": "向下"
   },
   "products": {
-    "heading": "同样的内芯，三种尺寸。",
-    "subtitle": "所有型号共用一套磁轴引擎。区别只在于你想在桌面上留多少空间给它。",
+    "heading": "三种布局，同一套认真装配流程。",
+    "subtitle": "先选尺寸。手感、卫星轴、键帽贴合和最终验机会在出货前完成。",
     "model60": {
       "name": "Signal 60",
-      "format": "60% · 紧凑型",
+      "format": "60% 紧凑布局",
       "spec1": "61 键",
-      "spec2": "280 × 105 mm",
-      "spec3": "580 g",
-      "description": "小尺寸，不妥协。61 键，比 A5 纸还小的占地面积，但每一颗轴都是和全尺寸同款的霍尔效应磁轴。为小桌面、大野心，和那种不眨眼的瞄准精度而生。"
+      "spec2": "适合随身携带",
+      "spec3": "$219 起",
+      "description": "适合小桌面、移动工作和专注写作的紧凑版本。它保留核心按键，去掉多余导航区，把空间还给鼠标和笔记本。适合熟悉快捷键、希望键盘融入桌面的用户。"
     },
     "model75": {
       "name": "Signal 75",
-      "format": "75% · 日用型",
+      "format": "75% 日常布局",
       "spec1": "84 键",
-      "spec2": "320 × 135 mm",
-      "spec3": "820 g",
-      "description": "你会天天用的那把。84 键——功能键排有了，方向键有了，但不会挤到你的副屏。它就像一个打包完美的登机箱：该带的都在，多余的没有。"
+      "spec2": "保留功能行",
+      "spec3": "$269 起",
+      "description": "多数桌面的平衡选择。保留方向键和功能行，比全尺寸更省空间。我们会调校卫星轴、检查轴体一致性，并附上布局说明，让第一周就能顺手使用。"
     },
     "model100": {
-      "name": "Signal 100",
-      "format": "100% · 全尺寸",
-      "spec1": "108 键",
-      "spec2": "440 × 140 mm",
-      "spec3": "1.15 kg",
-      "description": "所有的键，都给你。108 键，包括你坚称自己需要的数字键盘。同样的零延迟磁轴，同样的全模拟行程，只是铺在更宽的画布上。给那些白天写表格、晚上打残局的人。"
+      "name": "Signal TKL",
+      "format": "TKL 工作布局",
+      "spec1": "87 键",
+      "spec2": "独立方向区",
+      "spec3": "$289 起",
+      "description": "适合想要完整导航区、但不想占用小键盘宽度的人。写作、表格、游戏都能兼顾，是最容易推荐给混合工作场景的布局。"
     },
-    "switchCount": "颗磁轴",
-    "learnMore": "技术规格"
+    "switchCount": "已检查轴体",
+    "learnMore": "配置"
   },
   "tech": {
-    "heading": "不是机械轴，是磁轴。",
-    "subtitle": "传统轴体靠物理接触触发。我们不用。每个键下面是一颗霍尔传感器，实时读取按键的精确位置——触发点可以设在你想要的任意深度，松手瞬间就能被检测到。",
+    "heading": "像工作台产品一样完成，不像渲染图一样空泛。",
+    "subtitle": "差别往往在装配最后一小时：轴体是否坐稳、卫星轴是否有杂音、键帽是否对齐、打字测试是否通过。",
+    "imageAlt": "机械键盘装配时的轴体近景",
+    "imageCaption": "每个批次都会在实体键盘上检查轴体和卫星轴，再进入包装。",
     "feature1": {
-      "title": "可调触发点",
-      "value": "0.1",
+      "title": "触发行程",
+      "value": "0.1-4.0",
       "unit": "mm",
-      "desc": "每颗键可以在 0.1 mm 到 4.0 mm 之间自由设定触发深度。想把 WASD 设成轻触即发、空格键设成深按确认？随便调。Rapid Trigger 在你抬手的瞬间就复位，不用等回到固定位置。"
+      "desc": "磁轴版本会预设实用触发行程，并附上配置说明。标准机械轴版本会明确标注压力克数和手感。"
     },
     "feature2": {
-      "title": "亚毫秒级延迟",
-      "value": "0.03",
-      "unit": "ms",
-      "desc": "没有去抖算法，没有矩阵扫描延迟。传感器持续读取位置，固件直接把信号推到 USB。从手指到画面，路径短到物理极限。"
+      "title": "预设配置",
+      "value": "3",
+      "unit": "组",
+      "desc": "工作、游戏、安静时段的配置可以在出货前准备好。后续也可以自行调整，不会被锁死。"
     },
     "feature3": {
-      "title": "寿命比你长",
-      "value": "100",
-      "unit": "M",
-      "desc": "没有物理触点，就没有磨损。每一次按压都是非接触的。每颗轴体额定 1 亿次——大概率比你手里任何一把键盘都活得久。"
+      "title": "静置复检",
+      "value": "24",
+      "unit": "h",
+      "desc": "成品装好后会静置并进行第二次检查，避免松动键帽、卫星轴杂音或明显外壳问题流入出货。"
     }
   },
   "customize": {
-    "heading": "组装你自己的。",
-    "subtitle": "轴体、外壳、键帽——都是模块化的。选好核心，剩下的随便换。",
+    "heading": "只选真正影响手感的部件。",
+    "subtitle": "选项故意保持简洁。上桌之后，真正能被感知的就是这些。",
+    "imageAlt": "工作桌垫上的真实客制化键盘",
+    "imageCaption": "配置重点放在布局、轴体手感、外壳材料和键帽高度。",
     "switchType": "轴体手感",
-    "caseType": "外壳材质",
+    "caseType": "外壳材料",
     "keycapType": "键帽高度",
-    "switchLinear": "线性 · 60 g",
-    "switchTactile": "段落 · 55 g",
-    "switchClicky": "有声 · 65 g",
+    "switchLinear": "线性，顺滑",
+    "switchTactile": "段落，轻微反馈",
+    "switchClicky": "有声，清脆",
     "caseAluminum": "CNC 铝合金",
     "casePoly": "聚碳酸酯",
-    "caseWood": "竹木",
-    "keycapCherry": "Cherry 原厂",
-    "keycapSA": "SA 球帽",
-    "keycapDSA": "DSA 矮球帽",
-    "specPreview": "你的配置：{switch} · {case} · {keycap}"
+    "caseWood": "竹制腕托",
+    "keycapCherry": "Cherry 高度",
+    "keycapSA": "SA 高度",
+    "keycapDSA": "DSA 高度",
+    "specPreview": "当前选择：{switch} · {case} · {keycap}"
   },
   "waitlist": {
-    "heading": "先人一步。",
-    "subtitle": "我们小批次发货。留下邮箱，轮到你的时候通知你——不发广告，不啰嗦。",
-    "emailPlaceholder": "你的邮箱",
-    "cta": "锁定名额",
-    "submitting": "稍等…",
+    "heading": "第一批数量有限。",
+    "subtitle": "留下邮箱。开放预约前，我们会先发送配置表、实拍图、交付窗口和最终价格。没有连环营销邮件，也不制造虚假紧迫感。",
+    "imageAlt": "桌面上拍摄的彩色客制化键盘",
+    "imageCaption": "下一批会在当前成品通过最终检查后开放。",
+    "emailPlaceholder": "you@example.com",
+    "cta": "接收批次说明",
+    "submitting": "发送中...",
     "success": {
-      "title": "已经登记好了。",
-      "line1": "生产批次开放的第一时间，我们会邮件通知你。",
-      "line2": "早期用户享优先定价，终身锁定。",
-      "line3": "就这些。没有营销邮件，没有追加销售，只有上新通知。",
-      "back": "再登记一个"
+      "title": "你已加入名单。",
+      "line1": "开放预约前，我们会先把批次说明发给你。",
+      "line2": "你会先看到实拍图、配置、价格和预计出货窗口。",
+      "line3": "不会每天打扰，只发送真正有用的生产更新。",
+      "back": "添加另一个邮箱"
     },
-    "error": "这个邮箱地址好像不太对？"
+    "error": "请输入有效的邮箱地址。"
+  },
+  "productDetail": {
+    "notFound": "这个配置暂不可用。",
+    "back": "返回作品",
+    "base": "基础配置：${price}，不含所选升级项",
+    "added": "已加入购物车",
+    "addToCart": "加入购物车 - ${price}",
+    "viewCart": "查看购物车"
+  },
+  "cart": {
+    "title": "购物车",
+    "empty": "购物车是空的。",
+    "browse": "浏览作品",
+    "itemCount": "{count} 件商品",
+    "continueShopping": "继续浏览",
+    "remove": "移除",
+    "subtotal": "小计",
+    "shipping": "运费",
+    "shippingCalculated": "结账时计算",
+    "total": "合计",
+    "checkout": "去结账"
+  },
+  "checkout": {
+    "title": "结账",
+    "shipping": "配送信息",
+    "firstName": "名",
+    "lastName": "姓",
+    "email": "邮箱",
+    "address": "地址",
+    "city": "城市",
+    "state": "州/省",
+    "zip": "邮编",
+    "placeOrder": "提交订单 - ${total}",
+    "orderSummary": "订单摘要",
+    "free": "免费",
+    "confirmedTitle": "订单已确认",
+    "confirmedMessage": "键盘发出后，我们会邮件发送最终配置说明和物流信息。",
+    "orderTotal": "订单合计：${total}",
+    "backToStore": "返回商店",
+    "empty": "暂无可结账商品。",
+    "browse": "浏览作品"
   },
   "footer": {
-    "brandTagline": "模拟键盘工程。",
-    "productsCol": "键盘",
-    "companyCol": "公司",
-    "communityCol": "社区",
-    "about": "关于我们",
-    "blog": "工程日志",
-    "contact": "联系我们",
+    "brandTagline": "小批量客制化键盘。",
+    "brandNote": "独立键盘工作室",
+    "productsCol": "作品",
+    "companyCol": "工作室",
+    "communityCol": "关注",
+    "about": "关于",
+    "blog": "装配日志",
+    "contact": "联系",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Inc."
+    "copyright": "© 2026 Signal Keyboard Studio"
   }
 }

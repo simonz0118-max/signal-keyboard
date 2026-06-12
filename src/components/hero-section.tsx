@@ -8,58 +8,63 @@ export default function HeroSection() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden">
-      {/* Background keyboard image */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <div className="relative w-full max-w-[900px] aspect-[16/9] opacity-50">
-          <Image
-            src="/images/hero-keyboard.png"
-            alt=""
-            fill
-            className="object-contain"
-            priority
-            sizes="(max-width: 900px) 100vw, 900px"
-          />
-        </div>
-      </div>
+    <section className="relative min-h-[100svh] flex items-center md:items-end px-6 md:px-12 lg:px-24 pt-28 pb-12 md:pb-24 overflow-hidden">
+      <Image
+        src="/images/hero-keyboard-real.jpg"
+        alt=""
+        fill
+        className="object-cover"
+        preload
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,14,0.92)_0%,rgba(10,10,14,0.72)_38%,rgba(10,10,14,0.24)_100%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-bg-primary to-transparent" />
 
-      {/* Content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="relative z-10 max-w-3xl"
+        className="relative z-10 max-w-2xl text-left"
       >
-        <h1 className="text-[clamp(36px,8vw,72px)] font-bold tracking-tight leading-[1.05] text-text-primary">
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent mb-5">
+          {t("eyebrow")}
+        </p>
+        <h1 className="text-[clamp(34px,10vw,78px)] font-bold leading-[1.02] text-text-primary">
           {t("tagline")}
         </h1>
 
-        {/* Accent underline */}
-        <div className="mt-6 mx-auto w-[min(40%,280px)] h-px bg-accent opacity-60" />
-
-        <p className="mt-8 text-[16px] md:text-[18px] text-text-secondary max-w-lg mx-auto leading-relaxed">
+        <p className="mt-7 text-[16px] md:text-[18px] text-text-secondary max-w-xl leading-relaxed">
           {t("subtitle")}
         </p>
 
-        <a
-          href="#waitlist"
-          className="mt-10 inline-flex items-center gap-2 px-6 py-3 text-sm font-medium
-                     border border-accent text-accent rounded-md
-                     hover:bg-accent/10 hover:shadow-[0_0_24px_var(--accent-glow)]
-                     transition-all duration-300"
-        >
-          {t("cta")}
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-accent">
-            <path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </a>
+        <div className="mt-10 flex flex-col sm:flex-row gap-3">
+          <a
+            href="#products"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold bg-accent text-bg-primary rounded-md hover:shadow-[0_0_24px_var(--accent-glow)] transition-all duration-300"
+          >
+            {t("cta")}
+          </a>
+          <a
+            href="#technology"
+            className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium border border-white/20 text-text-primary rounded-md hover:border-white/40 hover:bg-white/5 transition-all duration-300"
+          >
+            {t("secondaryCta")}
+          </a>
+        </div>
+
+        <div className="mt-10 hidden md:grid grid-cols-3 gap-4 max-w-xl">
+          {["proof1", "proof2", "proof3"].map((key) => (
+            <div key={key} className="border-l border-white/20 pl-4">
+              <p className="text-xs text-text-muted leading-relaxed">{t(key)}</p>
+            </div>
+          ))}
+        </div>
       </motion.div>
 
-      {/* Scroll hint */}
       <motion.div
         animate={{ y: [0, 6, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="absolute bottom-8 flex flex-col items-center gap-2"
+        className="absolute bottom-8 right-6 md:right-12 lg:right-24 z-10 hidden md:flex flex-col items-center gap-2"
       >
         <span className="text-xs text-text-muted tracking-widest uppercase">{t("scrollHint")}</span>
         <svg width="16" height="8" viewBox="0 0 16 8" fill="none" className="text-text-muted">

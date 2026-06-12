@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 import SegmentedControl from "./segmented-control";
 
@@ -23,18 +24,6 @@ const keycapOptions = [
   { value: "sa", label: "" },
   { value: "dsa", label: "" },
 ];
-
-const caseColors: Record<string, string> = {
-  aluminum: "from-zinc-500 to-zinc-700",
-  poly: "from-zinc-300/30 to-zinc-500/30",
-  wood: "from-amber-700/40 to-amber-900/40",
-};
-
-const keycapShapes: Record<string, string> = {
-  cherry: "rounded-t-[3px]",
-  sa: "rounded-t-xl",
-  dsa: "rounded-full",
-};
 
 export default function CustomizationSection() {
   const t = useTranslations("customize");
@@ -67,47 +56,26 @@ export default function CustomizationSection() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Preview */}
-          <div className="flex justify-center">
-            <div className="w-full max-w-[480px] aspect-[2/1] bg-bg-surface border border-border-default rounded-xl p-6 flex flex-col gap-4">
-              {/* Case */}
-              <div
-                className={`flex-1 rounded-lg bg-gradient-to-b ${caseColors[caseType]} border border-border-default p-4 flex items-end justify-center`}
-              >
-                {/* Keyboard visualization */}
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={`${switchType}-${keycapType}`}
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    className="w-full max-w-[360px] bg-bg-primary/80 rounded-lg border border-border-default p-2"
-                  >
-                    <div className="grid grid-cols-[repeat(14,1fr)] gap-[1px]">
-                      {Array.from({ length: 56 }).map((_, i) => (
-                        <div
-                          key={i}
-                          className={`aspect-[3/4] ${keycapShapes[keycapType]} bg-bg-surface border border-border-default/40`}
-                        >
-                          <div
-                            className={`w-full h-[30%] mt-auto ${
-                              switchType === "linear"
-                                ? "bg-accent/10"
-                                : switchType === "tactile"
-                                ? "bg-amber-500/10"
-                                : "bg-sky-400/10"
-                            }`}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </motion.div>
-                </AnimatePresence>
-              </div>
-            </div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.55, ease: "easeOut" }}
+            className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border-default bg-bg-surface"
+          >
+            <Image
+              src="/images/workspace-real.jpg"
+              alt={t("imageAlt")}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <p className="absolute bottom-4 left-4 right-4 text-xs text-white/80 leading-relaxed">
+              {t("imageCaption")}
+            </p>
+          </motion.div>
 
-          {/* Controls */}
           <div className="flex flex-col gap-8">
             <SegmentedControl
               name={t("switchType")}

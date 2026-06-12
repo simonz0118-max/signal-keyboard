@@ -1,111 +1,164 @@
 {
   "nav": {
-    "products": "Keyboards",
-    "technology": "How It Works",
-    "customize": "Build Yours",
-    "community": "Community",
-    "joinWaitlist": "Get Early Access"
+    "products": "Builds",
+    "technology": "Tuning",
+    "customize": "Options",
+    "waitlist": "Batch notes",
+    "joinWaitlist": "Reserve a build"
   },
   "hero": {
-    "tagline": "Feel every keystroke.",
-    "subtitle": "Magnetic analog switches that read how far you press — not just whether you pressed. Zero lag. Fully customisable. This is what a keyboard should have always been.",
-    "cta": "Join the waitlist",
-    "scrollHint": "See what's inside"
+    "eyebrow": "Small-batch keyboards, tuned before they ship",
+    "tagline": "A keyboard that feels finished on day one.",
+    "subtitle": "SIGNAL builds compact mechanical keyboards for people who type, edit, write, play, and notice when a switch sounds wrong. Every batch is assembled in small numbers, checked by hand, and shipped with practical options instead of mystery specs.",
+    "cta": "Shop the batch",
+    "secondaryCta": "See the tuning process",
+    "proof1": "Real keyboard photography, not product renders.",
+    "proof2": "Switches, stabilizers, and case fit checked before dispatch.",
+    "proof3": "Clear configuration notes before you pay.",
+    "scrollHint": "Scroll"
   },
   "products": {
-    "heading": "Same core. Three sizes.",
-    "subtitle": "Every model runs the same magnetic switch engine. The only question is how much desk space you want to give it.",
+    "heading": "Three layouts. One careful build process.",
+    "subtitle": "Choose the footprint first. We handle the switch feel, stabilizer work, and final desk-ready setup.",
     "model60": {
       "name": "Signal 60",
-      "format": "60% — Compact",
+      "format": "60% compact",
       "spec1": "61 keys",
-      "spec2": "280 × 105 mm",
-      "spec3": "580 g",
-      "description": "The compact one that doesn't compromise. 61 keys, a footprint smaller than a sheet of A5, but every switch is the same magnetic Hall-effect engine we put in the full-size. Built for small desks, big ambitions, and the kind of aim that doesn't flinch."
+      "spec2": "Travel case ready",
+      "spec3": "From $219",
+      "description": "A compact build for small desks, travel kits, and focused writing. It keeps the essentials, drops the extra navigation cluster, and gives you more room for a mouse or notebook. Best for buyers who already know their shortcuts and want a board that disappears into the setup."
     },
     "model75": {
       "name": "Signal 75",
-      "format": "75% — Everyday",
+      "format": "75% daily driver",
       "spec1": "84 keys",
-      "spec2": "320 × 135 mm",
-      "spec3": "820 g",
-      "description": "The one you'll actually use every day. 84 keys — enough for a function row, enough for arrows, not enough to crowd out your second monitor. It's the keyboard equivalent of a well-packed carry-on: nothing missing, nothing extra."
+      "spec2": "Function row",
+      "spec3": "From $269",
+      "description": "The balanced option for most desks. You get arrows, function keys, and a tighter footprint than a full-size board. We tune the stabilizers, check switch consistency, and ship it with a layout card so the first week feels familiar."
     },
     "model100": {
-      "name": "Signal 100",
-      "format": "100% — Full-size",
-      "spec1": "108 keys",
-      "spec2": "440 × 140 mm",
-      "spec3": "1.15 kg",
-      "description": "All the keys. 108 of them, including the numpad you swear you need. Same zero-lag magnetic switches, same full analog range, just stretched across a wider canvas. For the people who write spreadsheets by day and clutch rounds by night."
+      "name": "Signal TKL",
+      "format": "TKL work layout",
+      "spec1": "87 keys",
+      "spec2": "Separated arrows",
+      "spec3": "From $289",
+      "description": "A tenkeyless build for people who want a full navigation cluster without the numpad width. It is the easiest layout to recommend for mixed work: writing in the morning, spreadsheets after lunch, and games after hours."
     },
-    "switchCount": "magnetic switches",
-    "learnMore": "Tech specs"
+    "switchCount": "checked switches",
+    "learnMore": "Configure"
   },
   "tech": {
-    "heading": "Magnetic, not mechanical.",
-    "subtitle": "Traditional switches physically touch to register a press. Ours don't. A Hall-effect sensor reads the exact position of every key in real time — so you can set the actuation point wherever you want, and release is detected the instant your finger lifts.",
+    "heading": "Built like a workbench product, not a render.",
+    "subtitle": "The difference is in the last hour of assembly: switch seating, stabilizer noise, keycap alignment, and a typing test before the board goes into the box.",
+    "imageAlt": "Close-up of keyboard switches during a real mechanical keyboard build",
+    "imageCaption": "Each batch is checked on a physical board, with switches and stabilizers inspected before packaging.",
     "feature1": {
-      "title": "Adjustable actuation",
-      "value": "0.1",
+      "title": "Switch range",
+      "value": "0.1-4.0",
       "unit": "mm",
-      "desc": "Set each key to fire anywhere between 0.1 mm and 4.0 mm. Want hair-trigger WASD and deep-press spacebar? Go ahead. Rapid Trigger means the key resets the moment you start lifting — no waiting for a fixed return point."
+      "desc": "For magnetic builds, we set practical actuation ranges and include the profile notes. For standard mechanical builds, we document the switch weight and feel clearly."
     },
     "feature2": {
-      "title": "Sub-millisecond latency",
-      "value": "0.03",
-      "unit": "ms",
-      "desc": "No debounce algorithm. No matrix scan delay. The sensor reads position continuously and the firmware pushes the signal straight to USB. From finger to frame, the path is as short as physics allows."
+      "title": "Saved setups",
+      "value": "3",
+      "unit": "profiles",
+      "desc": "Work, gaming, and quiet-hour profiles can be prepared before shipping. Nothing is locked: you can change the setup later."
     },
     "feature3": {
-      "title": "Built to outlast you",
-      "value": "100",
-      "unit": "M",
-      "desc": "No physical contacts means nothing to wear down. Every press is contactless. We rate each switch at 100 million actuations — which is probably longer than you'll keep any single keyboard."
+      "title": "Bench check",
+      "value": "24",
+      "unit": "h",
+      "desc": "Every finished unit rests and gets a second pass after assembly, so loose caps, rattly stabilizers, or obvious case issues are caught before dispatch."
     }
   },
   "customize": {
-    "heading": "Make it yours.",
-    "subtitle": "Switches, case, caps — everything swaps. Start with the core you want and build out from there.",
+    "heading": "Pick the parts that change the feel.",
+    "subtitle": "We keep the menu short on purpose. These are the choices that matter most once the keyboard is on your desk.",
+    "imageAlt": "Desk setup with a real custom keyboard on a work mat",
+    "imageCaption": "Configuration is practical: layout, switch feel, case material, and keycap profile.",
     "switchType": "Switch feel",
     "caseType": "Case material",
     "keycapType": "Keycap profile",
-    "switchLinear": "Linear · 60 g",
-    "switchTactile": "Tactile · 55 g",
-    "switchClicky": "Clicky · 65 g",
-    "caseAluminum": "CNC aluminium",
+    "switchLinear": "Linear, smooth",
+    "switchTactile": "Tactile, light bump",
+    "switchClicky": "Clicky, audible",
+    "caseAluminum": "CNC aluminum",
     "casePoly": "Polycarbonate",
-    "caseWood": "Bamboo",
-    "keycapCherry": "Cherry",
-    "keycapSA": "SA",
-    "keycapDSA": "DSA",
-    "specPreview": "Your build: {switch} · {case} · {keycap}"
+    "caseWood": "Bamboo wrist rest",
+    "keycapCherry": "Cherry profile",
+    "keycapSA": "SA profile",
+    "keycapDSA": "DSA profile",
+    "specPreview": "Selected build: {switch} · {case} · {keycap}"
   },
   "waitlist": {
-    "heading": "Get in early.",
-    "subtitle": "We're shipping in small batches. Join the list and we'll let you know when your slot opens — no spam, no nonsense.",
-    "emailPlaceholder": "you@email.com",
-    "cta": "Reserve a spot",
-    "submitting": "One moment…",
+    "heading": "Batch one is limited.",
+    "subtitle": "Leave your email and we will send the build sheet, photos, delivery window, and final price before reservations open. No drip campaign, no fake urgency.",
+    "imageAlt": "Colorful custom keyboard photographed on a desk",
+    "imageCaption": "The next batch opens after the current builds pass final inspection.",
+    "emailPlaceholder": "you@example.com",
+    "cta": "Get batch notes",
+    "submitting": "Sending...",
     "success": {
-      "title": "You're on the list.",
-      "line1": "We'll email you as soon as production slots open up.",
-      "line2": "Early members get priority pricing — locked in for life.",
-      "line3": "That's it. No drip campaigns, no upsells, just launch updates.",
+      "title": "You are on the list.",
+      "line1": "We will email the batch sheet before reservations open.",
+      "line2": "You will see photos, options, pricing, and the expected ship window first.",
+      "line3": "No daily emails. Only meaningful production updates.",
       "back": "Add another email"
     },
-    "error": "Hm, that doesn't look like an email address."
+    "error": "Please enter a valid email address."
+  },
+  "productDetail": {
+    "notFound": "This build is not available.",
+    "back": "Back to builds",
+    "base": "Base build: ${price} before selected options",
+    "added": "Added to cart",
+    "addToCart": "Add to cart - ${price}",
+    "viewCart": "View cart"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "browse": "Browse builds",
+    "itemCount": "{count, plural, one {# item} other {# items}}",
+    "continueShopping": "Continue shopping",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingCalculated": "Calculated at checkout",
+    "total": "Total",
+    "checkout": "Proceed to checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shipping": "Shipping",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zip": "ZIP",
+    "placeOrder": "Place order - ${total}",
+    "orderSummary": "Order summary",
+    "free": "Free",
+    "confirmedTitle": "Order confirmed",
+    "confirmedMessage": "We will email you with the final build notes and tracking once your keyboard ships.",
+    "orderTotal": "Order total: ${total}",
+    "backToStore": "Back to store",
+    "empty": "Nothing to check out.",
+    "browse": "Browse builds"
   },
   "footer": {
-    "brandTagline": "Analog keyboard engineering.",
-    "productsCol": "Keyboards",
-    "companyCol": "Company",
-    "communityCol": "Community",
+    "brandTagline": "Small-batch custom keyboards.",
+    "brandNote": "Independent keyboard studio",
+    "productsCol": "Builds",
+    "companyCol": "Studio",
+    "communityCol": "Follow",
     "about": "About",
-    "blog": "Engineering log",
+    "blog": "Build log",
     "contact": "Contact",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Inc."
+    "copyright": "© 2026 Signal Keyboard Studio"
   }
 }

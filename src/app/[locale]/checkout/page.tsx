@@ -37,11 +37,11 @@ export default function CheckoutPage() {
               <polyline points="20 6 9 17 4 12"/>
             </svg>
           </div>
-          <h1 className="text-3xl font-bold text-text-primary mb-3">Order confirmed</h1>
-          <p className="text-sm text-text-secondary mb-2">We\'ll email you with tracking once your keyboard ships.</p>
-          <p className="text-xs text-text-muted mb-8">Order total: ${total}</p>
+          <h1 className="text-3xl font-bold text-text-primary mb-3">{t("checkout.confirmedTitle")}</h1>
+          <p className="text-sm text-text-secondary mb-2">{t("checkout.confirmedMessage")}</p>
+          <p className="text-xs text-text-muted mb-8">{t("checkout.orderTotal", { total })}</p>
           <Link href="/" className="text-sm text-accent hover:underline underline-offset-4">
-            \u2190 Back to store
+            {t("checkout.backToStore")}
           </Link>
         </div>
       </main>
@@ -52,8 +52,8 @@ export default function CheckoutPage() {
     return (
       <main className="min-h-screen pt-24 section-padding">
         <div className="max-w-[500px] mx-auto text-center">
-          <p className="text-text-muted mb-6">Nothing to check out.</p>
-          <Link href="/" className="text-sm text-accent hover:underline underline-offset-4">\u2190 Browse keyboards</Link>
+          <p className="text-text-muted mb-6">{t("checkout.empty")}</p>
+          <Link href="/" className="text-sm text-accent hover:underline underline-offset-4">{t("checkout.browse")}</Link>
         </div>
       </main>
     );
@@ -62,7 +62,7 @@ export default function CheckoutPage() {
   return (
     <main className="min-h-screen pt-24 section-padding">
       <div className="max-w-[1000px] mx-auto">
-        <h1 className="text-3xl font-bold text-text-primary mb-10">Checkout</h1>
+        <h1 className="text-3xl font-bold text-text-primary mb-10">{t("checkout.title")}</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12">
           <motion.form
@@ -71,25 +71,25 @@ export default function CheckoutPage() {
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col gap-5"
           >
-            <h2 className="text-sm font-semibold text-text-secondary uppercase tracking-wider">Shipping</h2>
+            <h2 className="text-sm font-semibold text-text-secondary uppercase tracking-wider">{t("checkout.shipping")}</h2>
             <div className="grid grid-cols-2 gap-4">
-              <input required placeholder="First name" className="col-span-2 sm:col-span-1 px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-              <input required placeholder="Last name" className="col-span-2 sm:col-span-1 px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+              <input required placeholder={t("checkout.firstName")} className="col-span-2 sm:col-span-1 px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+              <input required placeholder={t("checkout.lastName")} className="col-span-2 sm:col-span-1 px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
             </div>
-            <input required type="email" placeholder="Email" className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-            <input required placeholder="Address" className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+            <input required type="email" placeholder={t("checkout.email")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+            <input required placeholder={t("checkout.address")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
             <div className="grid grid-cols-3 gap-4">
-              <input required placeholder="City" className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-              <input required placeholder="State" className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-              <input required placeholder="ZIP" className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+              <input required placeholder={t("checkout.city")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+              <input required placeholder={t("checkout.state")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+              <input required placeholder={t("checkout.zip")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
             </div>
             <button type="submit" className="mt-4 w-full py-3.5 text-sm font-semibold bg-accent text-bg-primary rounded-md hover:shadow-[0_0_24px_var(--accent-glow)] transition-all">
-              Place order \u2014 ${total}
+              {t("checkout.placeOrder", { total })}
             </button>
           </motion.form>
 
           <div className="p-6 bg-bg-surface border border-border-default rounded-lg h-fit">
-            <h2 className="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-4">Order summary</h2>
+            <h2 className="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-4">{t("checkout.orderSummary")}</h2>
             <div className="flex flex-col gap-3">
               {items.map((item, i) => {
                 const product = products.find((p) => p.id === item.productId);
@@ -109,13 +109,13 @@ export default function CheckoutPage() {
               })}
             </div>
             <div className="border-t border-border-default mt-4 pt-4 space-y-2">
-              <div className="flex justify-between text-sm text-text-secondary"><span>Subtotal</span><span>${subtotal}</span></div>
+              <div className="flex justify-between text-sm text-text-secondary"><span>{t("cart.subtotal")}</span><span>${subtotal}</span></div>
               <div className="flex justify-between text-sm text-text-secondary">
-                <span>Shipping</span>
-                <span>{shipping === 0 ? <span className="text-accent">Free</span> : `$${shipping}`}</span>
+                <span>{t("cart.shipping")}</span>
+                <span>{shipping === 0 ? <span className="text-accent">{t("checkout.free")}</span> : `$${shipping}`}</span>
               </div>
               <div className="flex justify-between text-lg font-semibold text-text-primary pt-2 border-t border-border-default">
-                <span>Total</span><span>${total}</span>
+                <span>{t("cart.total")}</span><span>${total}</span>
               </div>
             </div>
           </div>

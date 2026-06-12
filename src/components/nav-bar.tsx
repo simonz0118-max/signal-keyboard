@@ -8,7 +8,7 @@ import LocaleSwitcher from "./locale-switcher";
 import { useTheme } from "./theme-provider";
 import { useCart } from "@/lib/cart-context";
 
-const links = ["products", "technology", "customize", "community"] as const;
+const links = ["products", "technology", "customize", "waitlist"] as const;
 
 export default function NavBar() {
   const t = useTranslations("nav");

@@ -24,7 +24,7 @@ export default function ProductDetailClient() {
   if (!product) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-text-muted">Product not found.</p>
+        <p className="text-text-muted">{t("productDetail.notFound")}</p>
       </div>
     );
   }
@@ -44,7 +44,7 @@ export default function ProductDetailClient() {
     <main className="min-h-screen pt-24 section-padding">
       <div className="max-w-[1100px] mx-auto">
         <Link href="/" className="text-xs text-text-muted hover:text-text-secondary transition-colors mb-8 inline-block">
-          ← {t("nav.products")}
+          {t("productDetail.back")}
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -58,10 +58,11 @@ export default function ProductDetailClient() {
               src={product.image}
               alt={t(`products.${product.nameKey}.name` as never)}
               fill
-              className="object-contain p-8"
-              priority
+              className="object-cover"
+              preload
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />
           </motion.div>
 
           <div className="flex flex-col gap-8">
@@ -74,7 +75,9 @@ export default function ProductDetailClient() {
               </h1>
               <p className="text-2xl font-semibold text-text-primary mt-3">${total}</p>
               {total !== product.price && (
-                <p className="text-xs text-text-muted mt-1">Base: ${product.price} + options</p>
+                <p className="text-xs text-text-muted mt-1">
+                  {t("productDetail.base", { price: product.price })}
+                </p>
               )}
             </div>
 
@@ -110,10 +113,10 @@ export default function ProductDetailClient() {
                   : "bg-accent text-bg-primary border-accent hover:shadow-[0_0_24px_var(--accent-glow)]"
               }`}
             >
-              {added ? "✓ Added" : `Add to cart — $${total}`}
+              {added ? t("productDetail.added") : t("productDetail.addToCart", { price: total })}
             </button>
             <Link href="/cart" className="text-xs text-text-muted hover:text-accent transition-colors text-center">
-              View cart →
+              {t("productDetail.viewCart")}
             </Link>
           </div>
         </div>

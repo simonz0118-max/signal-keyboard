@@ -1,111 +1,164 @@
 {
   "nav": {
-    "products": "Claviers",
-    "technology": "La technologie",
-    "customize": "Configurez le vôtre",
-    "community": "Communauté",
-    "joinWaitlist": "Accès anticipé"
+    "products": "Builds",
+    "technology": "Réglage",
+    "customize": "Options",
+    "waitlist": "Lot",
+    "joinWaitlist": "Réserver"
   },
   "hero": {
-    "tagline": "Sentez chaque frappe.",
-    "subtitle": "Des switches magnétiques analogiques qui lisent jusqu'où vous appuyez — pas juste si vous appuyez. Zéro latence. Entièrement personnalisable. Voilà ce qu'un clavier aurait toujours dû être.",
-    "cta": "Rejoindre la liste",
-    "scrollHint": "Découvrir"
+    "eyebrow": "Claviers en petites séries, réglés avant expédition",
+    "tagline": "Un clavier fini dès le premier jour.",
+    "subtitle": "SIGNAL assemble des claviers mécaniques compacts pour celles et ceux qui écrivent, montent, travaillent, jouent, et entendent quand une touche sonne faux. Chaque lot est monté en petite quantité, vérifié à la main, puis expédié avec des options simples et documentées.",
+    "cta": "Voir le lot",
+    "secondaryCta": "Voir le réglage",
+    "proof1": "Photographies de vrais claviers, pas de rendus produit.",
+    "proof2": "Switches, stabilisateurs et boîtier vérifiés avant départ.",
+    "proof3": "Configuration claire avant paiement.",
+    "scrollHint": "Scroll"
   },
   "products": {
-    "heading": "Même moteur. Trois formats.",
-    "subtitle": "Tous les modèles partagent le même moteur à switches magnétiques. La seule question, c'est l'espace que vous voulez lui laisser sur votre bureau.",
+    "heading": "Trois formats. Le même soin au montage.",
+    "subtitle": "Choisissez d'abord l'encombrement. Nous nous occupons du toucher, des stabilisateurs, de l'alignement et du contrôle final.",
     "model60": {
       "name": "Signal 60",
-      "format": "60% · Compact",
+      "format": "60% compact",
       "spec1": "61 touches",
-      "spec2": "280 × 105 mm",
-      "spec3": "580 g",
-      "description": "Le compact qui ne sacrifie rien. 61 touches, un encombrement plus petit qu'une feuille A5, mais chaque switch est le même moteur magnétique à effet Hall que sur le grand format. Pour les petits bureaux, les grandes ambitions, et une précision qui ne tremble pas."
+      "spec2": "Prêt à voyager",
+      "spec3": "Dès $219",
+      "description": "Un build compact pour les petits bureaux, les sacs de travail et les sessions d'écriture concentrées. Il garde l'essentiel, libère de la place pour la souris ou le carnet, et convient aux personnes déjà à l'aise avec leurs raccourcis."
     },
     "model75": {
       "name": "Signal 75",
-      "format": "75% · Quotidien",
+      "format": "75% quotidien",
       "spec1": "84 touches",
-      "spec2": "320 × 135 mm",
-      "spec3": "820 g",
-      "description": "Celui que vous utiliserez tous les jours. 84 touches — assez pour une rangée de fonctions, assez pour les flèches, pas assez pour bousculer votre deuxième écran. C'est l'équivalent clavier d'un bagage cabine bien fait : rien ne manque, rien de trop."
+      "spec2": "Rangée fonction",
+      "spec3": "Dès $269",
+      "description": "Le choix équilibré pour la plupart des bureaux. Flèches et touches de fonction restent là, sans l'encombrement d'un full-size. Nous réglons les stabilisateurs, contrôlons la régularité des switches et ajoutons une fiche de disposition."
     },
     "model100": {
-      "name": "Signal 100",
-      "format": "100% · Grand format",
-      "spec1": "108 touches",
-      "spec2": "440 × 140 mm",
-      "spec3": "1,15 kg",
-      "description": "Toutes les touches. 108, pavé numérique inclus — pour ceux qui jurent en avoir besoin. Mêmes switches magnétiques sans latence, même plage analogique complète, simplement déployés sur une toile plus large. Pour les gens qui font du tableur le jour et du clutch round la nuit."
+      "name": "Signal TKL",
+      "format": "TKL travail",
+      "spec1": "87 touches",
+      "spec2": "Flèches séparées",
+      "spec3": "Dès $289",
+      "description": "Un tenkeyless pour garder le bloc de navigation sans la largeur du pavé numérique. Facile à recommander pour les journées mixtes : rédaction le matin, tableurs l'après-midi, jeu le soir."
     },
-    "switchCount": "switches magnétiques",
-    "learnMore": "Fiche technique"
+    "switchCount": "switches vérifiés",
+    "learnMore": "Configurer"
   },
   "tech": {
-    "heading": "Magnétique, pas mécanique.",
-    "subtitle": "Les switches traditionnels détectent une frappe par contact physique. Les nôtres, non. Un capteur à effet Hall lit la position exacte de chaque touche en temps réel — vous réglez le point d'actionnement où vous voulez, et le relâchement est détecté à l'instant où votre doigt se lève.",
+    "heading": "Fait sur établi, pas dans un rendu.",
+    "subtitle": "La différence se joue souvent dans la dernière heure : switch bien assis, stabilisateur silencieux, touches alignées, puis test de frappe avant mise en boîte.",
+    "imageAlt": "Gros plan de switches pendant l'assemblage d'un clavier mécanique",
+    "imageCaption": "Chaque lot est contrôlé sur un clavier physique avant emballage.",
     "feature1": {
-      "title": "Point d'actionnement réglable",
-      "value": "0.1",
+      "title": "Course",
+      "value": "0.1-4.0",
       "unit": "mm",
-      "desc": "Réglez chaque touche pour qu'elle s'active entre 0,1 mm et 4,0 mm. Vous voulez des WASD ultra-réactives et une barre d'espace à course longue ? Allez-y. Le Rapid Trigger réinitialise la touche dès que vous commencez à lever le doigt."
+      "desc": "Sur les builds magnétiques, nous préparons des plages d'activation pratiques et fournissons les notes de profil. Sur les builds mécaniques, le poids et le toucher sont indiqués clairement."
     },
     "feature2": {
-      "title": "Latence sous la milliseconde",
-      "value": "0.03",
-      "unit": "ms",
-      "desc": "Pas d'algorithme de debounce. Pas de délai de matrice. Le capteur lit la position en continu et le firmware envoie le signal directement en USB. Du doigt à l'écran, le chemin est aussi court que la physique le permet."
+      "title": "Profils prêts",
+      "value": "3",
+      "unit": "profils",
+      "desc": "Travail, jeu et heures calmes peuvent être préparés avant expédition. Rien n'est verrouillé : vous pouvez modifier la configuration ensuite."
     },
     "feature3": {
-      "title": "Conçu pour durer plus que vous",
-      "value": "100",
-      "unit": "M",
-      "desc": "Aucun contact physique ne s'use. Chaque frappe est sans contact. Nous garantissons 100 millions d'actionnements par switch — soit probablement plus longtemps que vous ne garderez un clavier."
+      "title": "Contrôle établi",
+      "value": "24",
+      "unit": "h",
+      "desc": "Chaque unité montée repose puis reçoit un second contrôle, afin de repérer touches lâches, stabilisateurs bruyants ou défauts de boîtier évidents."
     }
   },
   "customize": {
-    "heading": "Faites-le vôtre.",
-    "subtitle": "Switches, boîtier, keycaps — tout est interchangeable. Choisissez votre base et construisez à partir de là.",
-    "switchType": "Type de switch",
-    "caseType": "Matériau du boîtier",
-    "keycapType": "Profil des keycaps",
-    "switchLinear": "Linéaire · 60 g",
-    "switchTactile": "Tactile · 55 g",
-    "switchClicky": "Clicky · 65 g",
+    "heading": "Choisir ce qui change vraiment le toucher.",
+    "subtitle": "Le menu reste court volontairement. Ce sont les choix que l'on sent une fois le clavier sur le bureau.",
+    "imageAlt": "Vrai clavier custom posé sur un tapis de bureau",
+    "imageCaption": "La configuration reste pratique : format, toucher des switches, matériau du boîtier et profil de touches.",
+    "switchType": "Toucher switch",
+    "caseType": "Matériau",
+    "keycapType": "Profil touches",
+    "switchLinear": "Linéaire, fluide",
+    "switchTactile": "Tactile, bosse légère",
+    "switchClicky": "Clicky, sonore",
     "caseAluminum": "Aluminium CNC",
     "casePoly": "Polycarbonate",
-    "caseWood": "Bambou",
-    "keycapCherry": "Cherry",
-    "keycapSA": "SA",
-    "keycapDSA": "DSA",
-    "specPreview": "Votre configuration : {switch} · {case} · {keycap}"
+    "caseWood": "Repose-poignet bambou",
+    "keycapCherry": "Profil Cherry",
+    "keycapSA": "Profil SA",
+    "keycapDSA": "Profil DSA",
+    "specPreview": "Build sélectionné : {switch} · {case} · {keycap}"
   },
   "waitlist": {
-    "heading": "Soyez parmi les premiers.",
-    "subtitle": "Nous expédions par petits lots. Inscrivez-vous et nous vous préviendrons quand votre créneau s'ouvre — pas de spam, pas de fioritures.",
-    "emailPlaceholder": "vous@email.com",
-    "cta": "Réserver une place",
-    "submitting": "Un instant…",
+    "heading": "Le premier lot est limité.",
+    "subtitle": "Laissez votre email et nous enverrons la fiche build, les photos, la fenêtre de livraison et le prix final avant l'ouverture des réservations. Pas de campagne automatique, pas d'urgence fabriquée.",
+    "imageAlt": "Clavier custom coloré photographié sur un bureau",
+    "imageCaption": "Le lot suivant ouvre après le contrôle final des builds en cours.",
+    "emailPlaceholder": "you@example.com",
+    "cta": "Recevoir la fiche",
+    "submitting": "Envoi...",
     "success": {
-      "title": "C'est noté.",
-      "line1": "Nous vous enverrons un email dès que les créneaux de production s'ouvrent.",
-      "line2": "Les membres early bénéficient d'un tarif prioritaire — verrouillé à vie.",
-      "line3": "C'est tout. Pas de séquence d'emails, pas de vente additionnelle, juste les annonces de lancement.",
+      "title": "Vous êtes sur la liste.",
+      "line1": "Nous enverrons la fiche du lot avant l'ouverture des réservations.",
+      "line2": "Vous verrez d'abord les photos, options, prix et fenêtre d'expédition.",
+      "line3": "Pas d'email quotidien. Seulement les vraies mises à jour de production.",
       "back": "Ajouter un autre email"
     },
-    "error": "Cette adresse email ne semble pas valide."
+    "error": "Veuillez saisir une adresse email valide."
+  },
+  "productDetail": {
+    "notFound": "Ce build n'est pas disponible.",
+    "back": "Retour aux builds",
+    "base": "Build de base : ${price}, hors options choisies",
+    "added": "Ajouté au panier",
+    "addToCart": "Ajouter au panier - ${price}",
+    "viewCart": "Voir le panier"
+  },
+  "cart": {
+    "title": "Votre panier",
+    "empty": "Votre panier est vide.",
+    "browse": "Voir les builds",
+    "itemCount": "{count, plural, one {# article} other {# articles}}",
+    "continueShopping": "Continuer les achats",
+    "remove": "Retirer",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "shippingCalculated": "Calculée au paiement",
+    "total": "Total",
+    "checkout": "Passer au paiement"
+  },
+  "checkout": {
+    "title": "Paiement",
+    "shipping": "Livraison",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "address": "Adresse",
+    "city": "Ville",
+    "state": "Région",
+    "zip": "Code postal",
+    "placeOrder": "Commander - ${total}",
+    "orderSummary": "Récapitulatif",
+    "free": "Gratuite",
+    "confirmedTitle": "Commande confirmée",
+    "confirmedMessage": "Nous vous enverrons les notes finales du build et le suivi dès l'expédition.",
+    "orderTotal": "Total commande : ${total}",
+    "backToStore": "Retour à la boutique",
+    "empty": "Aucun article à payer.",
+    "browse": "Voir les builds"
   },
   "footer": {
-    "brandTagline": "Ingénierie clavier analogique.",
-    "productsCol": "Claviers",
-    "companyCol": "Entreprise",
-    "communityCol": "Communauté",
+    "brandTagline": "Claviers custom en petites séries.",
+    "brandNote": "Studio clavier indépendant",
+    "productsCol": "Builds",
+    "companyCol": "Studio",
+    "communityCol": "Suivre",
     "about": "À propos",
-    "blog": "Journal d'ingénierie",
+    "blog": "Journal d'atelier",
     "contact": "Contact",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Inc."
+    "copyright": "© 2026 Signal Keyboard Studio"
   }
 }

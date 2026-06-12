@@ -15,14 +15,14 @@ export default function FooterSection() {
             <div className="flex items-center gap-2 mb-3">
               <span className="w-1.5 h-1.5 bg-accent rounded-full" />
               <span className="text-sm font-bold tracking-tight text-text-primary">
-                NEOVORA
+                SIGNAL
               </span>
             </div>
             <p className="text-xs text-text-muted leading-relaxed">
               {t("brandTagline")}
             </p>
             <p className="text-[10px] text-text-muted/60 mt-1 tracking-wider uppercase">
-              A NEOVORA brand
+              {t("brandNote")}
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export default function FooterSection() {
             <div className="flex flex-col gap-2">
               <a href="#products" className="text-xs text-text-muted hover:text-text-primary transition-colors">S60</a>
               <a href="#products" className="text-xs text-text-muted hover:text-text-primary transition-colors">S75</a>
-              <a href="#products" className="text-xs text-text-muted hover:text-text-primary transition-colors">S100</a>
+              <a href="#products" className="text-xs text-text-muted hover:text-text-primary transition-colors">TKL</a>
             </div>
           </div>
 
