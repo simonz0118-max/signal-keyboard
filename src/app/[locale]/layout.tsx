@@ -24,7 +24,7 @@ const localeFonts: Record<string, { heading: string; body: string }> = {
 
 export const dynamic = "force-static";
 export const metadata: Metadata = {
-  metadataBase: new URL("https://neovora.com"),
+  metadataBase: new URL("https://signal.neovora.co"),
   title: "SIGNAL Keyboards — Small-batch custom builds",
   description: "Small-batch mechanical keyboards assembled, tuned, and shipped with practical switch, case, and keycap options.",
   keywords: ["keyboard", "mechanical keyboard", "custom keyboard", "keyboard studio", "keycaps", "switches"],
