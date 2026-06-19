@@ -4,18 +4,33 @@
     "technology": "튜닝",
     "customize": "옵션",
     "waitlist": "배치 안내",
-    "joinWaitlist": "예약하기"
+    "joinWaitlist": "예약하기",
+    "brand": "Asme",
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About",
+    "signUp": "Sign Up",
+    "login": "Login",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기"
   },
   "hero": {
-    "eyebrow": "출고 전 튜닝하는 소량 생산 키보드",
+    "eyebrow": "몇 분 만에 노코드 AI 앱 만들기",
     "tagline": "첫날부터 완성된 타건감.",
-    "subtitle": "SIGNAL은 매일 키보드를 쓰는 사람을 위한 소량 생산 기계식 키보드를 만듭니다. 글쓰기, 편집, 업무, 게임에서 스위치 소리와 스태빌라이저 잡음을 신경 쓰는 사람을 위해 실제 제품을 조립하고 손으로 확인한 뒤 출고합니다.",
-    "cta": "이번 배치 보기",
+    "subtitle": "하나의 풀스크린 작업 공간에서 AI 워크플로를 설계하고 테스트하고 배포하세요. 빠른 아이디어와 신중한 실행을 한곳에 모았습니다.",
+    "cta": "얼리 액세스 받기",
     "secondaryCta": "튜닝 과정 보기",
     "proof1": "제품 렌더가 아닌 실제 키보드 사진.",
     "proof2": "스위치, 스태빌라이저, 케이스 체결 상태를 출고 전 점검.",
     "proof3": "결제 전 구성 내용을 명확히 안내.",
-    "scrollHint": "Scroll"
+    "scrollHint": "Scroll",
+    "headingLine1": "컴퓨터로 생각하고 만드는",
+    "headingLine2": "새로운 방식",
+    "emailPlaceholder": "얼리 액세스를 받을 이메일 입력",
+    "submittedPlaceholder": "이메일로 알림을 받게 됩니다",
+    "submitAria": "이메일 제출",
+    "submittedAria": "이메일 제출 완료",
+    "demoLink": "비디오 데모 보기"
   },
   "products": {
     "heading": "세 가지 레이아웃, 같은 조립 기준.",
@@ -149,8 +164,8 @@
     "browse": "빌드 보기"
   },
   "footer": {
-    "brandTagline": "소량 생산 커스텀 키보드.",
-    "brandNote": "독립 키보드 스튜디오",
+    "brandTagline": "노코드 AI 앱 제작.",
+    "brandNote": "얼리 액세스 워크스페이스",
     "productsCol": "빌드",
     "companyCol": "스튜디오",
     "communityCol": "팔로우",
@@ -159,6 +174,6 @@
     "contact": "Contact",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Studio"
+    "copyright": "© 2026 Asme"
   }
 }

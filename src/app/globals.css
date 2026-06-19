@@ -1,29 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #0A0A0E;
-  --bg-surface: #111118;
-  --border-default: #1A1A24;
-  --accent: #00FF41;
-  --accent-glow: rgba(0, 255, 65, 0.15);
-  --text-primary: #F5F5F7;
-  --text-secondary: #888896;
-  --text-muted: #555562;
-  --nav-bg: rgba(10, 10, 14, 0.85);
-  --nav-border: rgba(26, 26, 36, 0.8);
+  --background: #000000;
+  --foreground: #ffffff;
+  --bg-primary: #000000;
+  --bg-surface: rgba(255, 255, 255, 0.035);
+  --border-default: rgba(255, 255, 255, 0.12);
+  --accent: #ffffff;
+  --accent-glow: rgba(255, 255, 255, 0.16);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.46);
+  --nav-bg: rgba(0, 0, 0, 0.28);
+  --nav-border: rgba(255, 255, 255, 0.14);
 }
 
 [data-theme="light"] {
-  --bg-primary: #F8F8FA;
-  --bg-surface: #FFFFFF;
-  --border-default: #E4E4EA;
-  --accent: #00B538;
-  --accent-glow: rgba(0, 181, 56, 0.12);
-  --text-primary: #0A0A0E;
-  --text-secondary: #5A5A6E;
-  --text-muted: #90909E;
-  --nav-bg: rgba(248, 248, 250, 0.85);
-  --nav-border: rgba(228, 228, 234, 0.8);
+  --background: #000000;
+  --foreground: #ffffff;
+  --bg-primary: #000000;
+  --bg-surface: rgba(255, 255, 255, 0.035);
+  --border-default: rgba(255, 255, 255, 0.12);
+  --accent: #ffffff;
+  --accent-glow: rgba(255, 255, 255, 0.16);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.46);
+  --nav-bg: rgba(0, 0, 0, 0.28);
+  --nav-border: rgba(255, 255, 255, 0.14);
 }
 
 @theme inline {
@@ -37,8 +41,9 @@
   --color-text-muted: var(--text-muted);
   --color-nav-bg: var(--nav-bg);
   --color-nav-border: var(--nav-border);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
 }
 
 * {
@@ -51,18 +56,66 @@ html {
 }
 
 body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
+  background: var(--background);
+  color: var(--foreground);
   font-family: var(--font-sans);
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: var(--accent-glow);
-  color: var(--text-primary);
+  background: var(--foreground);
+  color: var(--background);
 }
 
 .section-padding {
   @apply px-6 md:px-12 lg:px-24 py-24 md:py-36;
+}
+
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.01);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: none;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.4px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.15) 20%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0.15) 80%,
+    rgba(255, 255, 255, 0.45) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 9999px;
+  box-shadow: none !important;
+}
+
+.page-shell {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.08), transparent 28rem),
+    radial-gradient(circle at 80% 18%, rgba(120, 120, 120, 0.12), transparent 24rem),
+    #000;
 }

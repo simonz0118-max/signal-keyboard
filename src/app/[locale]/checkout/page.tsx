@@ -30,17 +30,17 @@ export default function CheckoutPage() {
 
   if (submitted) {
     return (
-      <main className="min-h-screen pt-24 section-padding">
+      <main className="page-shell min-h-screen pt-24 section-padding">
         <div className="max-w-[500px] mx-auto text-center">
-          <div className="w-16 h-16 mx-auto rounded-full border-2 border-accent bg-accent/10 flex items-center justify-center mb-6">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00FF41" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <div className="liquid-glass mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
           </div>
           <h1 className="text-3xl font-bold text-text-primary mb-3">{t("checkout.confirmedTitle")}</h1>
           <p className="text-sm text-text-secondary mb-2">{t("checkout.confirmedMessage")}</p>
           <p className="text-xs text-text-muted mb-8">{t("checkout.orderTotal", { total })}</p>
-          <Link href="/" className="text-sm text-accent hover:underline underline-offset-4">
+          <Link href="/" className="text-sm text-white hover:underline underline-offset-4">
             {t("checkout.backToStore")}
           </Link>
         </div>
@@ -50,17 +50,17 @@ export default function CheckoutPage() {
 
   if (items.length === 0) {
     return (
-      <main className="min-h-screen pt-24 section-padding">
+      <main className="page-shell min-h-screen pt-24 section-padding">
         <div className="max-w-[500px] mx-auto text-center">
           <p className="text-text-muted mb-6">{t("checkout.empty")}</p>
-          <Link href="/" className="text-sm text-accent hover:underline underline-offset-4">{t("checkout.browse")}</Link>
+          <Link href="/" className="text-sm text-white hover:underline underline-offset-4">{t("checkout.browse")}</Link>
         </div>
       </main>
     );
   }
 
   return (
-    <main className="min-h-screen pt-24 section-padding">
+    <main className="page-shell min-h-screen pt-24 section-padding">
       <div className="max-w-[1000px] mx-auto">
         <h1 className="text-3xl font-bold text-text-primary mb-10">{t("checkout.title")}</h1>
 
@@ -73,22 +73,22 @@ export default function CheckoutPage() {
           >
             <h2 className="text-sm font-semibold text-text-secondary uppercase tracking-wider">{t("checkout.shipping")}</h2>
             <div className="grid grid-cols-2 gap-4">
-              <input required placeholder={t("checkout.firstName")} className="col-span-2 sm:col-span-1 px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-              <input required placeholder={t("checkout.lastName")} className="col-span-2 sm:col-span-1 px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+              <input required placeholder={t("checkout.firstName")} className="col-span-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-text-primary outline-none transition-colors placeholder:text-text-muted focus:border-white/35 sm:col-span-1" />
+              <input required placeholder={t("checkout.lastName")} className="col-span-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-text-primary outline-none transition-colors placeholder:text-text-muted focus:border-white/35 sm:col-span-1" />
             </div>
-            <input required type="email" placeholder={t("checkout.email")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-            <input required placeholder={t("checkout.address")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+            <input required type="email" placeholder={t("checkout.email")} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-text-primary outline-none transition-colors placeholder:text-text-muted focus:border-white/35" />
+            <input required placeholder={t("checkout.address")} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-text-primary outline-none transition-colors placeholder:text-text-muted focus:border-white/35" />
             <div className="grid grid-cols-3 gap-4">
-              <input required placeholder={t("checkout.city")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-              <input required placeholder={t("checkout.state")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
-              <input required placeholder={t("checkout.zip")} className="px-4 py-3 text-sm bg-bg-primary border border-border-default rounded-md outline-none text-text-primary placeholder:text-text-muted focus:border-accent transition-colors" />
+              <input required placeholder={t("checkout.city")} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-text-primary outline-none transition-colors placeholder:text-text-muted focus:border-white/35" />
+              <input required placeholder={t("checkout.state")} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-text-primary outline-none transition-colors placeholder:text-text-muted focus:border-white/35" />
+              <input required placeholder={t("checkout.zip")} className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-text-primary outline-none transition-colors placeholder:text-text-muted focus:border-white/35" />
             </div>
-            <button type="submit" className="mt-4 w-full py-3.5 text-sm font-semibold bg-accent text-bg-primary rounded-md hover:shadow-[0_0_24px_var(--accent-glow)] transition-all">
+            <button type="submit" className="mt-4 w-full rounded-full bg-white py-3.5 text-sm font-semibold text-black transition-all hover:bg-white/90">
               {t("checkout.placeOrder", { total })}
             </button>
           </motion.form>
 
-          <div className="p-6 bg-bg-surface border border-border-default rounded-lg h-fit">
+          <div className="liquid-glass h-fit rounded-[28px] p-6">
             <h2 className="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-4">{t("checkout.orderSummary")}</h2>
             <div className="flex flex-col gap-3">
               {items.map((item, i) => {
@@ -108,13 +108,13 @@ export default function CheckoutPage() {
                 );
               })}
             </div>
-            <div className="border-t border-border-default mt-4 pt-4 space-y-2">
+            <div className="mt-4 space-y-2 border-t border-white/10 pt-4">
               <div className="flex justify-between text-sm text-text-secondary"><span>{t("cart.subtotal")}</span><span>${subtotal}</span></div>
               <div className="flex justify-between text-sm text-text-secondary">
                 <span>{t("cart.shipping")}</span>
-                <span>{shipping === 0 ? <span className="text-accent">{t("checkout.free")}</span> : `$${shipping}`}</span>
+                <span>{shipping === 0 ? <span className="text-white">{t("checkout.free")}</span> : `$${shipping}`}</span>
               </div>
-              <div className="flex justify-between text-lg font-semibold text-text-primary pt-2 border-t border-border-default">
+              <div className="flex justify-between border-t border-white/10 pt-2 text-lg font-semibold text-text-primary">
                 <span>{t("cart.total")}</span><span>${total}</span>
               </div>
             </div>

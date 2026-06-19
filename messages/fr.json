@@ -4,18 +4,33 @@
     "technology": "Réglage",
     "customize": "Options",
     "waitlist": "Lot",
-    "joinWaitlist": "Réserver"
+    "joinWaitlist": "Réserver",
+    "brand": "Asme",
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About",
+    "signUp": "Sign Up",
+    "login": "Login",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "hero": {
-    "eyebrow": "Claviers en petites séries, réglés avant expédition",
+    "eyebrow": "CRÉEZ UNE APP IA NO-CODE EN QUELQUES MINUTES",
     "tagline": "Un clavier fini dès le premier jour.",
-    "subtitle": "SIGNAL assemble des claviers mécaniques compacts pour celles et ceux qui écrivent, montent, travaillent, jouent, et entendent quand une touche sonne faux. Chaque lot est monté en petite quantité, vérifié à la main, puis expédié avec des options simples et documentées.",
-    "cta": "Voir le lot",
+    "subtitle": "Concevez, testez et publiez des workflows IA depuis un seul espace plein écran, pensé pour les idées rapides et l’exécution soignée.",
+    "cta": "Obtenir un accès anticipé",
     "secondaryCta": "Voir le réglage",
     "proof1": "Photographies de vrais claviers, pas de rendus produit.",
     "proof2": "Switches, stabilisateurs et boîtier vérifiés avant départ.",
     "proof3": "Configuration claire avant paiement.",
-    "scrollHint": "Scroll"
+    "scrollHint": "Scroll",
+    "headingLine1": "Une nouvelle façon de penser et créer",
+    "headingLine2": " avec les ordinateurs",
+    "emailPlaceholder": "Entrez votre email pour l’accès anticipé",
+    "submittedPlaceholder": "Vous recevrez les notifications par email",
+    "submitAria": "Envoyer l’email",
+    "submittedAria": "Email envoyé",
+    "demoLink": "Lire la démo vidéo"
   },
   "products": {
     "heading": "Trois formats. Le même soin au montage.",
@@ -149,8 +164,8 @@
     "browse": "Voir les builds"
   },
   "footer": {
-    "brandTagline": "Claviers custom en petites séries.",
-    "brandNote": "Studio clavier indépendant",
+    "brandTagline": "Création d’apps IA no-code.",
+    "brandNote": "Espace en accès anticipé",
     "productsCol": "Builds",
     "companyCol": "Studio",
     "communityCol": "Suivre",
@@ -159,6 +174,6 @@
     "contact": "Contact",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Studio"
+    "copyright": "© 2026 Asme"
   }
 }

@@ -25,21 +25,21 @@ export default function SegmentedControl({
       <span className="text-xs font-medium text-text-muted uppercase tracking-widest">
         {name}
       </span>
-      <div className="flex bg-bg-primary border border-border-default rounded-md p-0.5">
+      <div className="liquid-glass flex rounded-full p-1">
         {options.map((option) => (
           <button
             key={option.value}
             onClick={() => onChange(option.value)}
-            className={`relative flex-1 px-4 py-2 text-sm rounded-sm transition-colors ${
+            className={`relative flex-1 rounded-full px-4 py-2 text-sm transition-colors ${
               value === option.value
-                ? "text-accent"
+                ? "text-black"
                 : "text-text-muted hover:text-text-secondary"
             }`}
           >
             {value === option.value && (
               <motion.div
                 layoutId={`seg-bg-${name}`}
-                className="absolute inset-0.5 bg-accent/10 border border-accent/30 rounded-sm"
+                className="absolute inset-0 rounded-full bg-white"
                 transition={{ type: "spring", stiffness: 400, damping: 30 }}
               />
             )}

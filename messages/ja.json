@@ -4,18 +4,33 @@
     "technology": "調整",
     "customize": "選択肢",
     "waitlist": "ロット情報",
-    "joinWaitlist": "予約する"
+    "joinWaitlist": "予約する",
+    "brand": "Asme",
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About",
+    "signUp": "Sign Up",
+    "login": "Login",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる"
   },
   "hero": {
-    "eyebrow": "出荷前に調整する少量生産キーボード",
+    "eyebrow": "数分でノーコード AI アプリを構築",
     "tagline": "届いた日から、完成した打鍵感を。",
-    "subtitle": "SIGNAL は、書く、編集する、働く、遊ぶ人のための小ロットメカニカルキーボードです。スイッチ音やスタビライザーの違和感に気づく人へ向けて、実機で組み立て、手で確認してから出荷します。",
-    "cta": "このロットを見る",
+    "subtitle": "ひとつのフルスクリーンワークスペースで、AI ワークフローを設計、テスト、公開できます。速いアイデアと丁寧な実行を同じ場所で。",
+    "cta": "早期アクセスを受け取る",
     "secondaryCta": "調整工程を見る",
     "proof1": "製品レンダーではなく、実機写真を使用。",
     "proof2": "スイッチ、スタビライザー、ケースの収まりを出荷前に確認。",
     "proof3": "支払い前に構成内容を明確に提示。",
-    "scrollHint": "Scroll"
+    "scrollHint": "Scroll",
+    "headingLine1": "コンピューターで考え、創造する",
+    "headingLine2": "新しい方法",
+    "emailPlaceholder": "早期アクセス用のメールを入力",
+    "submittedPlaceholder": "メールで通知を受け取れます",
+    "submitAria": "メールを送信",
+    "submittedAria": "メールを送信しました",
+    "demoLink": "動画デモを見る"
   },
   "products": {
     "heading": "3つのレイアウト。同じ丁寧な組み立て。",
@@ -149,8 +164,8 @@
     "browse": "ビルドを見る"
   },
   "footer": {
-    "brandTagline": "少量生産のカスタムキーボード。",
-    "brandNote": "独立系キーボードスタジオ",
+    "brandTagline": "ノーコード AI アプリ作成。",
+    "brandNote": "早期アクセスワークスペース",
     "productsCol": "ビルド",
     "companyCol": "スタジオ",
     "communityCol": "フォロー",
@@ -159,6 +174,6 @@
     "contact": "Contact",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Studio"
+    "copyright": "© 2026 Asme"
   }
 }

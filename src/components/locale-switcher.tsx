@@ -12,14 +12,14 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="flex gap-0.5 bg-bg-surface border border-border-default rounded-md p-0.5">
+    <div className="glass-pill flex gap-0.5 p-0.5">
       {Object.entries(localeLabels).map(([code, label]) => (
         <button
           key={code}
           onClick={() => switchTo(code)}
-          className={`px-1.5 py-1 text-[11px] rounded font-medium transition-colors leading-none ${
+          className={`rounded-full px-1.5 py-1 text-[11px] font-medium leading-none transition-colors ${
             code === locale
-              ? "bg-accent/15 text-accent"
+              ? "bg-white text-black"
               : "text-text-muted hover:text-text-secondary"
           }`}
         >

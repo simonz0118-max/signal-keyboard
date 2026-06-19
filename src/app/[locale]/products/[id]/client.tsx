@@ -23,7 +23,7 @@ export default function ProductDetailClient() {
 
   if (!product) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="page-shell flex min-h-screen items-center justify-center">
         <p className="text-text-muted">{t("productDetail.notFound")}</p>
       </div>
     );
@@ -41,7 +41,7 @@ export default function ProductDetailClient() {
   }
 
   return (
-    <main className="min-h-screen pt-24 section-padding">
+    <main className="page-shell min-h-screen pt-24 section-padding">
       <div className="max-w-[1100px] mx-auto">
         <Link href="/" className="text-xs text-text-muted hover:text-text-secondary transition-colors mb-8 inline-block">
           {t("productDetail.back")}
@@ -52,7 +52,7 @@ export default function ProductDetailClient() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative aspect-square bg-bg-surface border border-border-default rounded-xl overflow-hidden"
+            className="liquid-glass relative aspect-square overflow-hidden rounded-[32px] bg-white/[0.02]"
           >
             <Image
               src={product.image}
@@ -107,15 +107,15 @@ export default function ProductDetailClient() {
 
             <button
               onClick={handleAdd}
-              className={`w-full py-3.5 text-sm font-semibold rounded-md border transition-all duration-300 ${
+              className={`w-full rounded-full py-3.5 text-sm font-semibold transition-all duration-300 ${
                 added
-                  ? "bg-accent/20 border-accent text-accent"
-                  : "bg-accent text-bg-primary border-accent hover:shadow-[0_0_24px_var(--accent-glow)]"
+                  ? "bg-white/15 text-white"
+                  : "bg-white text-black hover:bg-white/90"
               }`}
             >
               {added ? t("productDetail.added") : t("productDetail.addToCart", { price: total })}
             </button>
-            <Link href="/cart" className="text-xs text-text-muted hover:text-accent transition-colors text-center">
+            <Link href="/cart" className="text-center text-xs text-text-muted transition-colors hover:text-white">
               {t("productDetail.viewCart")}
             </Link>
           </div>

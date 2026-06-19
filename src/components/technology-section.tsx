@@ -11,7 +11,7 @@ export default function TechnologySection() {
   const t = useTranslations("tech");
 
   return (
-    <section id="technology" className="section-padding bg-bg-surface/30">
+    <section id="technology" className="section-padding relative bg-white/[0.015]">
       <div className="max-w-[1200px] mx-auto">
         <SectionHeading
           title={t("heading")}
@@ -26,7 +26,7 @@ export default function TechnologySection() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border-default bg-bg-primary">
+            <div className="liquid-glass relative aspect-[4/3] overflow-hidden rounded-[32px] bg-white/[0.02]">
               <Image
                 src="/images/build-bench-real.jpg"
                 alt={t("imageAlt")}
@@ -49,10 +49,10 @@ export default function TechnologySection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.12, ease: "easeOut" }}
-                className="relative pl-6 border-l border-border-default hover:border-accent/30 transition-colors"
+                className="liquid-glass relative rounded-[26px] px-6 py-5 transition-colors"
               >
                 <div className="flex items-baseline gap-2 mb-2">
-                  <span className="text-[32px] font-bold font-mono text-accent tracking-tight">
+                  <span className="text-[32px] font-bold font-mono text-white tracking-tight">
                     {t(`${k}.value`)}
                   </span>
                   <span className="text-sm font-medium text-text-muted">

@@ -7,15 +7,15 @@ export default function FooterSection() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="border-t border-border-default">
+    <footer className="border-t border-white/10 bg-black">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <span className="w-1.5 h-1.5 bg-accent rounded-full" />
+              <span className="h-1.5 w-1.5 rounded-full bg-white" />
               <span className="text-sm font-bold tracking-tight text-text-primary">
-                SIGNAL
+                ASME
               </span>
             </div>
             <p className="text-xs text-text-muted leading-relaxed">
@@ -63,7 +63,7 @@ export default function FooterSection() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-border-default flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
           <p className="text-xs text-text-muted">
             {t("copyright")}
           </p>

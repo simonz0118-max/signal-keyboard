@@ -23,7 +23,7 @@ export default function WaitlistSection() {
   }
 
   return (
-    <section id="waitlist" className="section-padding bg-bg-surface/20">
+    <section id="waitlist" className="section-padding relative bg-white/[0.015]">
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
         <AnimatePresence mode="wait">
           {state === "success" ? (
@@ -34,11 +34,11 @@ export default function WaitlistSection() {
               exit={{ opacity: 0, scale: 0.96 }}
               className="flex flex-col items-start text-left gap-6"
             >
-              <div className="w-12 h-12 rounded-full border border-accent/30 bg-accent/10 flex items-center justify-center">
+              <div className="liquid-glass flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.03]">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path
                     d="M4 10l4 4 8-8"
-                    stroke="#00FF41"
+                    stroke="#ffffff"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -55,7 +55,7 @@ export default function WaitlistSection() {
               </div>
               <button
                 onClick={() => setState("idle")}
-                className="mt-4 text-xs text-text-muted hover:text-text-secondary transition-colors underline underline-offset-4"
+                className="mt-4 text-xs text-text-muted underline underline-offset-4 transition-colors hover:text-text-secondary"
               >
                 {t("success.back")}
               </button>
@@ -73,7 +73,7 @@ export default function WaitlistSection() {
                 subtitle={t("subtitle")}
               />
 
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mt-8 max-w-md">
+              <form onSubmit={handleSubmit} className="liquid-glass mt-8 flex max-w-md flex-col gap-3 rounded-[28px] p-2 sm:flex-row">
                 <input
                   type="email"
                   value={email}
@@ -81,21 +81,21 @@ export default function WaitlistSection() {
                   onFocus={() => setState("focused")}
                   onBlur={() => state !== "error" && setState("idle")}
                   placeholder={t("emailPlaceholder")}
-                  className={`flex-1 px-4 py-3 text-sm bg-bg-primary border rounded-md outline-none transition-all
+                  className={`flex-1 rounded-full bg-transparent px-4 py-3 text-sm outline-none transition-all
                              text-text-primary placeholder:text-text-muted
                              ${
                                state === "error"
-                                 ? "border-red-500/50 focus:border-red-500"
+                                 ? "ring-1 ring-red-500/50"
                                  : state === "focused"
-                                 ? "border-accent focus:border-accent shadow-[0_0_12px_rgba(0,255,65,0.06)]"
-                                 : "border-border-default hover:border-text-muted focus:border-accent"
+                                 ? "ring-1 ring-white/35"
+                                 : ""
                              }`}
                 />
                 <button
                   type="submit"
                   disabled={state === "submitting"}
-                  className="px-6 py-3 text-sm font-medium border border-accent text-accent rounded-md
-                             hover:bg-accent/10 hover:shadow-[0_0_20px_rgba(0,255,65,0.12)]
+                  className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black
+                             hover:bg-white/90
                              disabled:opacity-50 disabled:cursor-not-allowed
                              transition-all duration-300 whitespace-nowrap"
                 >
@@ -118,7 +118,7 @@ export default function WaitlistSection() {
             </motion.div>
           )}
         </AnimatePresence>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border-default bg-bg-primary">
+        <div className="liquid-glass relative aspect-[4/3] overflow-hidden rounded-[32px] bg-white/[0.02]">
           <Image
             src="/images/product-s75-real.jpg"
             alt={t("imageAlt")}

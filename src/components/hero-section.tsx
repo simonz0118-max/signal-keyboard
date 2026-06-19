@@ -1,76 +1,159 @@
 "use client";
 
+import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ArrowRight, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
-import Image from "next/image";
+import BackgroundVideo from "./background-video";
+
+type CtaState = "button" | "form" | "submitted";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const [ctaState, setCtaState] = useState<CtaState>("button");
+  const [email, setEmail] = useState("");
+  const [typedPlaceholder, setTypedPlaceholder] = useState("");
+
+  const targetPlaceholder = useMemo(() => {
+    return ctaState === "submitted" ? t("submittedPlaceholder") : t("emailPlaceholder");
+  }, [ctaState, t]);
+
+  useEffect(() => {
+    if (ctaState === "button") return;
+
+    let index = 0;
+    const interval = window.setInterval(() => {
+      index += 1;
+      setTypedPlaceholder(targetPlaceholder.slice(0, index));
+      if (index >= targetPlaceholder.length) window.clearInterval(interval);
+    }, 60);
+
+    return () => window.clearInterval(interval);
+  }, [ctaState, targetPlaceholder]);
+
+  useEffect(() => {
+    if (ctaState !== "submitted") return;
+
+    const timeout = window.setTimeout(() => {
+      setCtaState("button");
+      setEmail("");
+      setTypedPlaceholder("");
+    }, 4000);
+
+    return () => window.clearTimeout(timeout);
+  }, [ctaState]);
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setTypedPlaceholder("");
+    setCtaState("submitted");
+  }
 
   return (
-    <section className="relative min-h-[100svh] flex items-center md:items-end px-6 md:px-12 lg:px-24 pt-28 pb-12 md:pb-24 overflow-hidden">
-      <Image
-        src="/images/hero-keyboard-real.jpg"
-        alt=""
-        fill
-        className="object-cover"
-        preload
-        sizes="100vw"
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,14,0.92)_0%,rgba(10,10,14,0.72)_38%,rgba(10,10,14,0.24)_100%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-bg-primary to-transparent" />
+    <section className="relative flex min-h-[100svh] flex-1 flex-col items-center justify-center overflow-hidden px-6">
+      <BackgroundVideo />
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="relative z-10 max-w-2xl text-left"
-      >
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent mb-5">
-          {t("eyebrow")}
-        </p>
-        <h1 className="text-[clamp(34px,10vw,78px)] font-bold leading-[1.02] text-text-primary">
-          {t("tagline")}
-        </h1>
-
-        <p className="mt-7 text-[16px] md:text-[18px] text-text-secondary max-w-xl leading-relaxed">
-          {t("subtitle")}
-        </p>
-
-        <div className="mt-10 flex flex-col sm:flex-row gap-3">
-          <a
-            href="#products"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold bg-accent text-bg-primary rounded-md hover:shadow-[0_0_24px_var(--accent-glow)] transition-all duration-300"
+      <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center justify-center gap-7 pt-20 text-center md:gap-9 md:pt-16">
+        <div>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="mb-4 text-[10px] font-medium uppercase tracking-[0.2em] text-white/80 md:text-[11px]"
           >
-            {t("cta")}
-          </a>
-          <a
-            href="#technology"
-            className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium border border-white/20 text-text-primary rounded-md hover:border-white/40 hover:bg-white/5 transition-all duration-300"
+            {t("eyebrow")}
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="mx-auto mb-5 max-w-4xl bg-gradient-to-b from-white via-white/95 to-white/70 bg-clip-text text-4xl font-medium leading-[1.05] tracking-[-0.01em] text-transparent md:text-[clamp(52px,5.5vw,64px)]"
+            style={{ fontFamily: "var(--font-instrument-serif), serif" }}
           >
-            {t("secondaryCta")}
-          </a>
+            {t("headingLine1")}
+            <br className="hidden md:block" />
+            {t("headingLine2")}
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.25, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+            className="mx-auto max-w-xl text-sm leading-6 text-white/58 md:text-[15px]"
+          >
+            {t("subtitle")}
+          </motion.p>
         </div>
 
-        <div className="mt-10 hidden md:grid grid-cols-3 gap-4 max-w-xl">
-          {["proof1", "proof2", "proof3"].map((key) => (
-            <div key={key} className="border-l border-white/20 pl-4">
-              <p className="text-xs text-text-muted leading-relaxed">{t(key)}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="flex min-h-[50px] w-full justify-center"
+        >
+          <AnimatePresence mode="wait">
+            {ctaState === "button" ? (
+              <motion.button
+                key="early-access-button"
+                type="button"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+                onClick={() => {
+                  setTypedPlaceholder("");
+                  setCtaState("form");
+                }}
+                className="cursor-pointer rounded-full border border-white/10 px-10 py-3 text-[14px] font-medium text-white/90 backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/[0.02]"
+              >
+                {t("cta")}
+              </motion.button>
+            ) : (
+              <motion.form
+                key="early-access-form"
+                data-testid="hero-email-form"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+                onSubmit={handleSubmit}
+                className="flex w-full max-w-[320px] items-center gap-2 rounded-full border border-white/20 bg-white/[0.02] py-1.5 pl-5 pr-1.5 text-[14px] font-medium backdrop-blur-sm transition-colors duration-300 focus-within:border-white/40"
+              >
+                <input
+                  data-testid="hero-email-input"
+                  autoFocus
+                  type="email"
+                  value={email}
+                  disabled={ctaState === "submitted"}
+                  onChange={(event) => setEmail(event.target.value)}
+                  placeholder={typedPlaceholder}
+                  className="min-w-0 flex-1 bg-transparent text-white outline-none placeholder:text-white/45 disabled:cursor-default"
+                />
+                <button
+                  data-testid="hero-email-submit"
+                  type="submit"
+                  disabled={ctaState === "submitted"}
+                  aria-label={ctaState === "submitted" ? t("submittedAria") : t("submitAria")}
+                  className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-white text-black transition-transform duration-300 hover:scale-105 disabled:hover:scale-100"
+                >
+                  {ctaState === "submitted" ? <Check className="h-4 w-4" /> : <ArrowRight className="h-4 w-4" />}
+                </button>
+              </motion.form>
+            )}
+          </AnimatePresence>
+        </motion.div>
 
-      <motion.div
-        animate={{ y: [0, 6, 0] }}
-        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="absolute bottom-8 right-6 md:right-12 lg:right-24 z-10 hidden md:flex flex-col items-center gap-2"
-      >
-        <span className="text-xs text-text-muted tracking-widest uppercase">{t("scrollHint")}</span>
-        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" className="text-text-muted">
-          <path d="M1 1l7 6 7-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </motion.div>
+        <motion.a
+          href="#technology"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+          className="text-[13px] font-medium tracking-wide text-white/80 transition-colors duration-300 hover:text-white/40"
+        >
+          {t("demoLink")}
+        </motion.a>
+      </div>
     </section>
   );
 }

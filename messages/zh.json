@@ -4,18 +4,33 @@
     "technology": "调校",
     "customize": "选项",
     "waitlist": "批次说明",
-    "joinWaitlist": "预约一把"
+    "joinWaitlist": "预约一把",
+    "brand": "Asme",
+    "features": "功能",
+    "pricing": "价格",
+    "about": "关于",
+    "signUp": "注册",
+    "login": "登录",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
   },
   "hero": {
-    "eyebrow": "小批量键盘，出货前完成调校",
+    "eyebrow": "几分钟内构建无代码 AI 应用",
     "tagline": "第一天上桌，就应该是完成品。",
-    "subtitle": "SIGNAL 为真正每天使用键盘的人做小批量机械键盘：写字、剪辑、工作、游戏，都会在意手感和声音。每个批次限量装配，人工检查，不靠玄学参数包装。",
-    "cta": "查看本批次",
+    "subtitle": "在一个全屏工作区里设计、测试并发布 AI 工作流，让快速想法和严谨执行可以放在同一处完成。",
+    "cta": "获取早期访问",
     "secondaryCta": "了解调校流程",
     "proof1": "真实键盘摄影，不使用产品渲染图。",
     "proof2": "轴体、卫星轴和外壳装配出货前逐项检查。",
     "proof3": "付款前提供清楚的配置说明。",
-    "scrollHint": "向下"
+    "scrollHint": "向下",
+    "headingLine1": "一种全新的思考与创造方式",
+    "headingLine2": " 用电脑完成",
+    "emailPlaceholder": "输入邮箱以获取早期访问资格",
+    "submittedPlaceholder": "你将通过邮箱收到通知",
+    "submitAria": "提交邮箱",
+    "submittedAria": "邮箱已提交",
+    "demoLink": "播放视频演示"
   },
   "products": {
     "heading": "三种布局，同一套认真装配流程。",
@@ -149,8 +164,8 @@
     "browse": "浏览作品"
   },
   "footer": {
-    "brandTagline": "小批量客制化键盘。",
-    "brandNote": "独立键盘工作室",
+    "brandTagline": "无代码 AI 应用创建工具。",
+    "brandNote": "早期访问工作区",
     "productsCol": "作品",
     "companyCol": "工作室",
     "communityCol": "关注",
@@ -159,6 +174,6 @@
     "contact": "联系",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Studio"
+    "copyright": "© 2026 Asme"
   }
 }

@@ -16,7 +16,10 @@ export default function SectionHeading({ title, subtitle }: SectionHeadingProps)
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="text-center mb-16 md:mb-24"
     >
-      <h2 className="text-[clamp(24px,4vw,40px)] font-semibold tracking-tight text-text-primary">
+      <h2
+        className="text-[clamp(30px,5vw,54px)] font-medium leading-[1.04] tracking-[-0.01em] text-text-primary"
+        style={{ fontFamily: "var(--font-instrument-serif), serif" }}
+      >
         {title}
       </h2>
       {subtitle && (

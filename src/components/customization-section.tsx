@@ -48,7 +48,7 @@ export default function CustomizationSection() {
   };
 
   return (
-    <section id="customize" className="section-padding">
+    <section id="customize" className="section-padding relative">
       <div className="max-w-[1200px] mx-auto">
         <SectionHeading
           title={t("heading")}
@@ -61,7 +61,7 @@ export default function CustomizationSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.55, ease: "easeOut" }}
-            className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border-default bg-bg-surface"
+            className="liquid-glass relative aspect-[4/3] overflow-hidden rounded-[32px] bg-white/[0.02]"
           >
             <Image
               src="/images/workspace-real.jpg"
@@ -106,7 +106,7 @@ export default function CustomizationSection() {
             />
 
             {/* Spec preview */}
-            <div className="pt-4 border-t border-border-default">
+            <div className="liquid-glass rounded-[22px] px-5 py-4">
               <p className="font-mono text-xs text-text-muted">
                 {t("specPreview", {
                   switch: switchLabels[switchType],

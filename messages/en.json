@@ -4,18 +4,33 @@
     "technology": "Tuning",
     "customize": "Options",
     "waitlist": "Batch notes",
-    "joinWaitlist": "Reserve a build"
+    "joinWaitlist": "Reserve a build",
+    "brand": "Asme",
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About",
+    "signUp": "Sign Up",
+    "login": "Login",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
-    "eyebrow": "Small-batch keyboards, tuned before they ship",
+    "eyebrow": "BUILD A NO-CODE AI APP IN MINUTES",
     "tagline": "A keyboard that feels finished on day one.",
-    "subtitle": "SIGNAL builds compact mechanical keyboards for people who type, edit, write, play, and notice when a switch sounds wrong. Every batch is assembled in small numbers, checked by hand, and shipped with practical options instead of mystery specs.",
-    "cta": "Shop the batch",
+    "subtitle": "Design, test, and ship AI-powered workflows from a single fullscreen workspace built for fast ideas and careful execution.",
+    "cta": "Get early access",
     "secondaryCta": "See the tuning process",
     "proof1": "Real keyboard photography, not product renders.",
     "proof2": "Switches, stabilizers, and case fit checked before dispatch.",
     "proof3": "Clear configuration notes before you pay.",
-    "scrollHint": "Scroll"
+    "scrollHint": "Scroll",
+    "headingLine1": "A new way to think and create",
+    "headingLine2": " with computers",
+    "emailPlaceholder": "Enter Your Email Here For Early Access",
+    "submittedPlaceholder": "You Will Receive Notifications By Email",
+    "submitAria": "Submit email",
+    "submittedAria": "Email submitted",
+    "demoLink": "Play Video Demo"
   },
   "products": {
     "heading": "Three layouts. One careful build process.",
@@ -149,8 +164,8 @@
     "browse": "Browse builds"
   },
   "footer": {
-    "brandTagline": "Small-batch custom keyboards.",
-    "brandNote": "Independent keyboard studio",
+    "brandTagline": "No-code AI app creation.",
+    "brandNote": "Early access workspace",
     "productsCol": "Builds",
     "companyCol": "Studio",
     "communityCol": "Follow",
@@ -159,6 +174,6 @@
     "contact": "Contact",
     "discord": "Discord",
     "twitter": "X",
-    "copyright": "© 2026 Signal Keyboard Studio"
+    "copyright": "© 2026 Asme"
   }
 }

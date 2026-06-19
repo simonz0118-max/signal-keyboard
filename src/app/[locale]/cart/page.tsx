@@ -21,11 +21,11 @@ export default function CartPage() {
 
   if (items.length === 0) {
     return (
-      <main className="min-h-screen pt-24 section-padding">
+      <main className="page-shell min-h-screen pt-24 section-padding">
         <div className="max-w-[500px] mx-auto text-center">
           <h1 className="text-3xl font-bold text-text-primary mb-6">{t("cart.title")}</h1>
           <p className="text-text-muted mb-6">{t("cart.empty")}</p>
-          <Link href="/" className="text-sm text-accent hover:underline underline-offset-4">
+          <Link href="/" className="text-sm text-white hover:underline underline-offset-4">
             {t("cart.browse")}
           </Link>
         </div>
@@ -34,7 +34,7 @@ export default function CartPage() {
   }
 
   return (
-    <main className="min-h-screen pt-24 section-padding">
+    <main className="page-shell min-h-screen pt-24 section-padding">
       <div className="max-w-[900px] mx-auto">
         <div className="flex items-center justify-between mb-10">
           <div>
@@ -60,9 +60,9 @@ export default function CartPage() {
                 key={i}
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="flex gap-4 p-4 bg-bg-surface border border-border-default rounded-lg"
+                className="liquid-glass flex gap-4 rounded-[24px] p-4"
               >
-                <div className="relative w-20 h-20 bg-bg-primary rounded-md border border-border-default overflow-hidden shrink-0">
+                <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-[18px] bg-white/[0.03]">
                   <Image
                     src={product.image}
                     alt={t(`products.${product.nameKey}.name` as never)}
@@ -84,12 +84,12 @@ export default function CartPage() {
                     <div className="flex items-center gap-2">
                       <button
                         onClick={() => updateQuantity(i, item.quantity - 1)}
-                        className="w-6 h-6 flex items-center justify-center rounded border border-border-default text-xs text-text-muted hover:text-text-primary transition-colors"
+                        className="flex h-6 w-6 items-center justify-center rounded-full border border-white/15 text-xs text-text-muted transition-colors hover:text-text-primary"
                       >−</button>
                       <span className="text-sm text-text-primary w-6 text-center">{item.quantity}</span>
                       <button
                         onClick={() => updateQuantity(i, item.quantity + 1)}
-                        className="w-6 h-6 flex items-center justify-center rounded border border-border-default text-xs text-text-muted hover:text-text-primary transition-colors"
+                        className="flex h-6 w-6 items-center justify-center rounded-full border border-white/15 text-xs text-text-muted transition-colors hover:text-text-primary"
                       >+</button>
                     </div>
                     <div className="flex items-center gap-4">
@@ -106,19 +106,19 @@ export default function CartPage() {
           })}
         </div>
 
-        <div className="mt-8 p-6 bg-bg-surface border border-border-default rounded-lg">
+        <div className="liquid-glass mt-8 rounded-[28px] p-6">
           <div className="flex justify-between text-sm text-text-secondary mb-2">
             <span>{t("cart.subtotal")}</span><span>${subtotal}</span>
           </div>
           <div className="flex justify-between text-sm text-text-secondary mb-4">
             <span>{t("cart.shipping")}</span><span className="text-text-muted">{t("cart.shippingCalculated")}</span>
           </div>
-          <div className="border-t border-border-default pt-4 flex justify-between text-lg font-semibold text-text-primary">
+          <div className="flex justify-between border-t border-white/10 pt-4 text-lg font-semibold text-text-primary">
             <span>{t("cart.total")}</span><span>${subtotal}</span>
           </div>
           <Link
             href="/checkout"
-            className="mt-6 block w-full text-center py-3 text-sm font-semibold bg-accent text-bg-primary rounded-md hover:shadow-[0_0_24px_var(--accent-glow)] transition-all"
+            className="mt-6 block w-full rounded-full bg-white py-3 text-center text-sm font-semibold text-black transition-all hover:bg-white/90"
           >
             {t("cart.checkout")}
           </Link>

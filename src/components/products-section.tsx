@@ -8,7 +8,7 @@ export default function ProductsSection() {
   const t = useTranslations("products");
 
   return (
-    <section id="products" className="section-padding">
+    <section id="products" className="section-padding relative">
       <div className="max-w-[1200px] mx-auto">
         <SectionHeading title={t("heading")} subtitle={t("subtitle")} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

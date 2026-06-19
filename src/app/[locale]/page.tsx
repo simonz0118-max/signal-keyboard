@@ -8,7 +8,7 @@ import FooterSection from "@/components/footer-section";
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="page-shell relative min-h-screen overflow-hidden bg-black text-white">
       <NavBar />
       <HeroSection />
       <ProductsSection />

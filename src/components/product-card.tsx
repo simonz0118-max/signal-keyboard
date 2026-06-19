@@ -33,14 +33,11 @@ export default function ProductCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay, ease: "easeOut" }}
-      whileHover={{ borderColor: "rgba(0, 255, 65, 0.5)" }}
-      className="group relative bg-bg-surface border border-border-default rounded-lg p-5
-                 transition-all duration-300
-                 hover:shadow-[0_0_32px_var(--accent-glow)]"
+      className="liquid-glass group relative rounded-[28px] p-4 transition-all duration-300 hover:bg-white/[0.025]"
     >
       <Link href={`/products/${productId}`} className="block">
         {/* Product image */}
-        <div className="relative aspect-[4/3] bg-bg-primary rounded-md border border-border-default mb-5 overflow-hidden">
+        <div className="relative mb-5 aspect-[4/3] overflow-hidden rounded-[22px] bg-white/[0.03]">
           <Image
             src={imageSrc}
             alt={name}
@@ -48,13 +45,13 @@ export default function ProductCard({
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent opacity-70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/5 to-transparent opacity-80" />
         </div>
 
         {/* Model badge + price */}
         <div className="flex items-center justify-between mb-3 min-w-0 gap-3">
           <div className="flex items-center gap-2 min-w-0">
-            <span className="w-1.5 h-1.5 bg-accent rounded-full opacity-60 shrink-0" />
+            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-white/70" />
             <span className="text-xs font-medium text-text-muted uppercase tracking-widest truncate">
               {format}
             </span>
@@ -84,9 +81,9 @@ export default function ProductCard({
             {[...Array(3)].map((_, i) => (
               <div
                 key={i}
-                className="w-4 h-4 rounded-full border border-bg-surface bg-bg-primary flex items-center justify-center"
+                className="flex h-4 w-4 items-center justify-center rounded-full border border-white/10 bg-white/[0.04]"
               >
-                <div className="w-1.5 h-1.5 rounded-full bg-accent/60" />
+                <div className="h-1.5 w-1.5 rounded-full bg-white/60" />
               </div>
             ))}
           </div>
@@ -96,7 +93,7 @@ export default function ProductCard({
         </div>
 
         {/* Learn more */}
-        <span className="inline-flex items-center gap-1.5 text-xs font-medium text-accent/70 group-hover:text-accent transition-colors">
+        <span className="inline-flex items-center gap-1.5 text-xs font-medium text-white/60 transition-colors group-hover:text-white">
           {learnMore}
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
             <path
